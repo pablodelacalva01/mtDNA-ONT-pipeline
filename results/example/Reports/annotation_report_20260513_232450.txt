@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------------------------
+INFORME DE ANOTACION - mtDNA ONT
+Fecha:          mié may 13 23:24:50 CEST 2026
+Referencia:     NC_012920.1 (rCRS)
+SnpEff DB:      GRCh38.99
+ClinVar:        /home/pdelacalvac/TFM/Data/Annotation_DBs/clinvar_mt_rCRS.vcf.gz
+gnomAD:         /home/pdelacalvac/TFM/Data/Annotation_DBs/gnomad_mt_rCRS.vcf.gz
+AF minimo:      0.01
+--------------------------------------------------------------------------------------------
+
+Versiones de bases de datos utilizadas:
+BASE_DE_DATOS        VERSION                        FUENTE                                             FECHA_DESCARGA
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------     
+Haplogrep 3 			3.2.2             https://github.com/genepi/haplogrep3/releases/download/v3.2.2/haplogrep3-3.2.2-linux.zip 2026-05-11 12:03:08
+ClinVar_mt           2026-05-03                     https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz 2026-05-11 12:03:23
+gnomAD_mt            v3.1                           https://storage.googleapis.com/gcp-public-data--gnomad/release/3.1/vcf/genomes/gnomad.genomes.v3.1.sites.chrM.vcf.bgz 2026-05-11 12:03:25
+HaploGrep3           
+Haplogrep 3 3.2.2             https://github.com/genepi/haplogrep3/releases/download/v3.2.2/haplogrep3-3.2.2-linux.zip 2026-05-11 13:15:26
+ClinVar_mt           2026-05-03                     https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz 2026-05-11 13:15:36
+gnomAD_mt            v3.1                           https://storage.googleapis.com/gcp-public-data--gnomad/release/3.1/vcf/genomes/gnomad.genomes.v3.1.sites.chrM.vcf.bgz 2026-05-11 13:15:37
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode17
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         J1c2e2
+  Calidad clasificacion:              0.9708
+
+  --- Variantes anotadas ---
+  Total variantes (AF >= 0.01):           35
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  34
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                                9
+  LOW:                                     6
+  MODIFIER:                               20
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       31
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pdelacalvac/TFM/Results/Variants_Annotated/barcode17/barcode17_gnomad.vcf.gz
+  TSV clinico:                        /home/pdelacalvac/TFM/Results/TSV/barcode17_annotated.tsv
+  Haplogrupo:                         /home/pdelacalvac/TFM/Results/Haplogroups/barcode17_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode18
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         J2a2b1
+  Calidad clasificacion:              0.9270
+
+  --- Variantes anotadas ---
+  Total variantes (AF >= 0.01):           39
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  38
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                                7
+  LOW:                                    12
+  MODIFIER:                               20
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       31
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pdelacalvac/TFM/Results/Variants_Annotated/barcode18/barcode18_gnomad.vcf.gz
+  TSV clinico:                        /home/pdelacalvac/TFM/Results/TSV/barcode18_annotated.tsv
+  Haplogrupo:                         /home/pdelacalvac/TFM/Results/Haplogroups/barcode18_haplogroup.txt
+
+-------------------------------------------------------------------------
+  FIN DEL INFORME DE ANOTACION
+  Completado: mié may 13 23:26:13 CEST 2026
+  Informes HTML: /home/pdelacalvac/TFM/Data/Processed/05.Annotation/html/
+-------------------------------------------------------------------------

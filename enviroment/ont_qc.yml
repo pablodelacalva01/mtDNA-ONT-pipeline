@@ -1,0 +1,40 @@
+name: ont_qc
+# --------------------------------------------------------------------------------
+# Autor:   Pablo de la Calva Castineira
+# Fecha:   05/05/2026
+# Titulo:  "Analisis bioinformatico y su implementacion en la practica clinica
+#           diaria de datos de NGS de lecturas largas mediante tecnologa Nanopore"
+#
+# Entorno conda para el pipeline de QC y filtrado de lecturas de lecturas mtDNA de Nanopore 
+# Orden del procesamiento:
+#   entrada de datos → nanoplot → porechop → nanofilt → filtlong → nanoplot 
+#
+# Crear entorno : conda env create -f ont_qc.yml
+# Activar       : conda activate ont_qc
+# Verificar     : conda env list
+# --------------------------------------------------------------------------------
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+
+  # QC de lecturas ONT
+  - nanoplot=1.42.0         # visualizacion: longitud, calidad, N50
+
+  # Eliminacion de adaptadores
+  - porechop=0.2.4          # trimming adaptadores especificos ONT
+
+  # Filtrado de lecturas
+  - nanofilt=2.8.0          # filtrado por calidad 
+  - filtlong=0.2.1          # optimizacion: seleccion de mejores lecturas por calidad/longitud
+
+  # Dependencias Python requeridas por nanopack
+  - numpy>=1.16.0
+  - pandas>=0.25.0
+  - matplotlib>=3.0.0
+  - seaborn>=0.11.0
+  - biopython>=1.70
+  - plotly>=4.0.0
+  - pyarrow>=0.14.0

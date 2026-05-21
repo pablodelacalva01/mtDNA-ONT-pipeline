@@ -1,0 +1,20 @@
+[200~# Datos crudos y procesados (no subir nunca datos clínicos)
+*.fastq
+*.fastq.gz
+*.bam
+*.bam.bai
+*.sam
+*.vcf.gz
+*.vcf.gz.tbi
+*.fa
+*.fai
+*.mmi
+*.dict
+
+# Logs y temporales
+*.log
+tmp/
+Data/
+
+# Conda
+.conda/

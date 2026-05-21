@@ -1,0 +1,47 @@
+name: ont_align
+# --------------------------------------------------------------------------------
+# Autor:   Pablo de la Calva Castineira
+# Fecha:   05/05/2026
+# Titulo:  "Analisis bioinformatico y su implementacion en la practica clinica
+#           diaria de datos de NGS de lecturas largas mediante tecnologa Nanopore"
+#
+# Entorno conda para el pipeline de alineamiento de de lecturas mtDNA de Nanopore 
+# Orden del procesamiento:
+#   indexado ref (samtools + minimap2) → BAM → sort → index 
+#   minimap2/ngmlr → gatk4 → flagstat → qualimap
+#
+# Crear entorno : conda env create -f ont_align.yml
+# Activar       : conda activate ont_align
+# Verificar     : conda env list
+#
+# NOTA GATK4:
+#   Se incluyen aqui porque es compatibles a nivel de dependencias con
+#   minimap2/samtools en bioconda. Sin embargo, GATK4 desde bioconda NO
+#   configura automaticamente su entorno Python interno.
+#   Si se producen conflictos en la creacion del entorno, eliminar gatk4.
+# --------------------------------------------------------------------------------
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+
+  # Alineamiento
+  - minimap2=2.28           # alineador principal ONT (preset map-ont)
+  - ngmlr=0.2.7             # alineador alternativo (alta sensibilidad)
+
+  # Manipulacion BAM
+  - samtools=1.19         
+
+  # QC del alineamiento
+  - qualimap=2.3            # bamqc: cobertura, profundidad, GC, distribucion de longitudes
+
+  # Procesamiento BAM pre-variant calling (opcional)
+  - picard=3.1.1            # AddOrReplaceReadGroups, MarkDuplicates, CreateSequenceDictionary
+  - gatk4=4.4.0.0           # Mutect2 (modo mitocondrial), HaplotypeCaller
+
+  # Dependencias
+  - openjdk=17              # requerido por Picard y GATK4
+  - numpy>=1.16.0
+  - pandas>=0.25.0
