@@ -17,6 +17,7 @@ Desarrollado como parte del TFM:
 ```bash
 git clone https://github.com/pablodelacalva01/mtDNA-ONT-pipeline.git
 cd mtDNA-ONT-pipeline
+```
 
 ### 2. Crear entornos de conda
 ```bash
@@ -27,7 +28,7 @@ conda env create -f enviroment/anot_annot.yml
 ```
 
 ### 3. Setup de bases de datos para las anotaciones (aplicar solo la primera vez)
-````bash
+```bash
 conda activate ont_annot
 bash scripts/04_annot_setup.sh
 ```
@@ -57,8 +58,8 @@ En `results/example` se incluyen resultados de muestra para verificar que el pip
 
 ## Herramientas utilizadas
 - **QC**: Nanoplot, Porechop, NanoFilt y Filtlong
--**Alineamiento**: Minimap2, NGMLR, Samtools, GATK4 y Qualimap
--**Llamada de variantes**: Clair3, Mutserve2, Bcftools y Samtools
+- **Alineamiento**: Minimap2, NGMLR, Samtools, GATK4 y Qualimap
+- **Llamada de variantes**: Clair3, Mutserve2, Bcftools y Samtools
 - **Anotación**: SnpEff, bcftools, HaploGrep3, ClinVar y gnomAD (mt)
 
 ## Licencia 
