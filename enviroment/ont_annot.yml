@@ -1,0 +1,82 @@
+name: ont_annot
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Autor:   Pablo de la Calva Castineira
+# Fecha:   05/05/2026
+# Titulo:  "Analisis bioinformatico y su implementacion en la practica clinica
+#           diaria de datos de NGS de lecturas largas mediante tecnologa Nanopore"
+#
+# Entorno conda para el pipeline de anotacion de variantes de lecturas mtDNA de Nanopore 
+#
+# Crear entorno : conda env create -f ont_annot.yml
+# Activar       : conda activate ont_annot
+# Verificar     : conda env list
+#
+# RELACION CON ont_vc:
+#   Este entorno es INDEPENDIENTE de ont_vc (variant calling).
+#   Separacion deliberada para evitar conflictos Perl/Python entre VEP y Clair3/PyTorch.
+#   Comparte bcftools (misma version 1.23) para garantizar compatibilidad de VCFs.
+#
+# REFERENCIA PARA EL PIPELINE:
+#   rCRS → NC_012920.1 (GRCh38.p14)
+#   SnpEff trabaja con esta nomenclatura de forma nativa → sin renombrado de contigs.
+#   ClinVar y gnomAD usan chrM → el renombrado se gestiona automaticamente en setup.sh.
+#
+# HERRAMIENTAS:
+#   - snpeff:      Anotacion funcional → Base de datos compatible con NC_012920.1 (rCRS)
+#   - bcftools:    Anotacion con bases de datos locales (ClinVar, gnomAD mt, HmtVar)
+#   - haplogrep3:  Clasificacion de haplogrupos mitocondriales 
+#   - python:      Generacion del informe HTML clinico final (jinja2 + pandas)
+#   - samtools:    Auxiliar (indexado, stats)
+#
+# NOTAS DE COMPATIBILIDAD:
+#   - ensembl-vep requiere Perl >= 5.26 y entorno limpio (sin PyTorch/Python 3.11)
+#   - bcftools 1.23 sincronizado con HTSlib 1.23 (igual que ont_vc)
+#   - openjdk 17 requerido por haplogrep3 (igual que Mutserve2 en ont_vc)
+#   - jinja2 disponible en conda-forge sin conflictos con el resto del entorno
+#
+# INSTALACION:
+#   1. Crear entorno:
+#        conda env create -f ont_vc.yml
+#   2. Activar:
+#        conda activate ont_vc
+#   3. Instalar base de datos SnpEff (mtDNA incluido):
+#      snpEff download GRCh38.99
+#   4. Ejecutar script de annot_setup.sh
+#   El mismo script sirve para actualizar las bases de datos:
+#   bash /home/.../annot_setup.sh --update
+#
+#   Diferencia entre ambos modos:
+#     Sin flag:    instalacion completa (HaploGrep3 + descarga inicial de todas las DBs)
+#     --update:    solo actualiza ClinVar, gnomAD y HmtVar (omite HaploGrep3)
+# ----------------------------------------------------------------------------------------------------------------------------------
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+ 
+dependencies:
+  - snpeff=5.2                 # Anotador funcional principal (gen, region, impacto, HGVS)
+                               # DB GRCh38.99 compatible con NC_012920.1 (rCRS) de forma nativa
+
+  - bcftools=1.23              # Anotacion con DBs locales (ClinVar, gnomAD, HmtVar)
+                               # Misma version que ont_vc (compatibilidad total de VCFs)
+
+  - htslib=1.23                # HTSlib compartida bcftools/samtools (sincronizada con ont_vc)
+  - samtools=1.23              
+
+  - openjdk=17                 # Requerido por haplogrep3.jar (misma version que en ont_vc)
+ 
+  - python=3.10                # Python 3.10: compatible con todas las dependencias del entorno
+
+  - jinja2                     # Motor de plantillas para generacion del informe HTML clinico
+  - pandas                     
+  - numpy                      # Dependencia de pandas
+ 
+  - tabix                      # Indexado tabix de VCFs bgzipped
+  - pigz                       
+ 
+  - make
+  - gcc
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
