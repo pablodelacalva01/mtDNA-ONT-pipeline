@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"SAMPLE"	"V22"	"1"	"0.9226"	"1-16569"	"8860G"	"72C 150T 263G 709A 750G 1438G 2706G 4580A 4769G 7028T 7765G 15326G 15904T 16298C"	"15052G (localPrivateMutation) 15140A (globalPrivateMutation)"	"15140A [V132I| Codon 1 | CYTB ]"	"72C 150T 263G 709A 750G 1438G 2706G 4580A 4769G 7028T 7765G 15052G 15140A 15326G 15904T 16298C"

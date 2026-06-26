@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"SAMPLE"	"H3"	"1"	"0.8353"	"1-16569"	"8860G"	"263G 750G 1438G 4769G 6776C 15326G"	"195C (localPrivateMutation) 8311C (localPrivateMutation) 8581A (globalPrivateMutation) 16519C (hotspot)"	"8581A [A19T| Codon 1 | ATP6 ]"	"195C 263G 750G 1438G 4769G 6776C 8311C 8581A 15326G 16519C"

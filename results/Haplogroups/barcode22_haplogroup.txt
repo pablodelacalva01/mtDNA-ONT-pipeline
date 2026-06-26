@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"SAMPLE"	"H1t"	"1"	"1.0000"	"1-16569"	""	"263G 750G 1438G 3010A 4769G 8860G 9986A 15326G"	"16519C (hotspot)"	""	"263G 750G 1438G 3010A 4769G 8860G 9986A 15326G 16519C"

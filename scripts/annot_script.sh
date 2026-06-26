@@ -155,14 +155,16 @@ REPORT_ANNOT="${RESULTS}/AnnotationReports/annotation_report_${TIMESTAMP}.txt"
     echo "INFORME DE ANOTACION - mtDNA ONT"
     echo "Fecha:          $(date)"
     echo "Referencia:     ${CONTIG} (rCRS)"
+    echo "--------------------------------------------------------------------------------------------"
     echo "SnpEff DB:      ${SNPEFF_DB}"
     echo "ClinVar:        ${CLINVAR_DB}"
     echo "gnomAD:         ${GNOMAD_DB}"
     echo "AF minimo:      ${AF_MIN}"
-    echo "--------------------------------------------------------------------------------------------"
-    echo ""
     echo "Versiones de bases de datos utilizadas:"
-    cat "${DB_VERSION_LOG}"
+    # Extraer solo el bloque de versiones mas reciente del log (evita duplicados entre ejecuciones)
+    tac "${DB_VERSION_LOG}" \
+        | awk '/^$/{if(found) exit} /\t/{found=1; print}' \
+        | tac
     echo ""
 } > "${REPORT_ANNOT}"
 
@@ -317,24 +319,67 @@ for SAMPLE in "${SAMPLES[@]}"; do
     TSV_OUT="${RESULTS}/TSV/${SAMPLE}_annotated.tsv"
 
     # Cabecera TSV
-    echo -e "CHROM\tPOS\tREF\tALT\tAF\tDP\tGENE\tEFFECT\tIMPACT\tHGVS_C\tHGVS_P\tCLNSIG\tCLNDN\tAF_hom\tAF_het\tAC_hom\tAC_het" \
-        > "${TSV_OUT}"
+     {
+        echo "# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+        echo "# TSV ANOTADO - mtDNA ONT | Muestra: ${SAMPLE}"
+        echo "# Generado: $(date)"
+        echo "# Referencia: ${CONTIG} (rCRS)"
+        echo "#"
+        echo "# VERSIONES DE BASES DE DATOS:"
+        printf "# %-25s %-15s %-55s %s\n" "Base_de_datos" "Version" "Fuente" "Fecha_descarga"
+            # Solo el bloque mas reciente del log (evita duplicados de ejecuciones anteriores)
+        tac "${DB_VERSION_LOG}" \
+            | awk '/^$/{if(found) exit} /\t/{found=1; print}' \
+            | tac \
+            | awk -F'\t' 'NF>=4 {printf "# %-25s %-15s %-55s %s\n", $1, $2, $3, $4}'
+        echo "#"
+        echo "# LEYENDA DE COLUMNAS:"
+        echo "# CHROM      : Cromosoma / contig de referencia (${CONTIG})"
+        echo "# POS        : Posicion en la referencia (rCRS)"
+        echo "# REF        : Alelo de referencia"
+        echo "# ALT        : Alelo alternativo"
+        echo "# AF_ALT     : Frecuencia del alelo alternativo (heteroplasma)= AD_ALT / DP_TOTAL"
+        echo "# DP_TOTAL   : Cobertura total en la posicion"
+        echo "# GENE       : Gen mitocondrial afectado (anotacion SnpEff)"
+        echo "# EFFECT     : Efecto funcional predicho (SnpEff)"
+        echo "# IMPACT     : Impacto funcional: HIGH / MODERATE / LOW / MODIFIER"
+        echo "# HGVS_C     : Nomenclatura HGVS a nivel de ADN (c.)"
+        echo "# HGVS_P     : Nomenclatura HGVS a nivel de proteina (p.); '.' si no aplica"
+        echo "# CLNSIG     : Clasificacion clinica ClinVar (Pathogenic, Benign, VUS, etc.)"
+        echo "# CLNDN      : Nombre de la enfermedad asociada en ClinVar"
+        echo "# AF_hom     : Frecuencia de homoplasmia en gnomAD v3.1"
+        echo "# AF_het     : Frecuencia de heteroplasmia en gnomAD v3.1"
+        echo "# AC_hom     : Numero de individuos homoplasmaticos en gnomAD v3.1"
+        echo "# AC_het     : Numero de individuos heteroplasmaticos en gnomAD v3.1"
+        echo "# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+        echo -e "CHROM\tPOS\tREF\tALT\tAF_ALT\tDP_TOTAL\tGENE\tEFFECT\tIMPACT\tHGVS_C\tHGVS_P\tCLNSIG\tCLNDN\tAF_hom\tAF_het\tAC_hom\tAC_het"
+    } > "${TSV_OUT}"
 
     # Extraer campos con bcftools query
     # ANN de SnpEff, formato: Allele|Effect|Impact|GeneName|...|HGVS.c|HGVS.p|...
     # Se extraen campos con awk para las posiciones 4,2,3,10,11:
     bcftools query \
-        -f '%CHROM\t%POS\t%REF\t%ALT\t[%AF]\t[%DP]\t%INFO/ANN\t%INFO/CLNSIG\t%INFO/CLNDN\t%INFO/AF_hom\t%INFO/AF_het\t%INFO/AC_hom\t%INFO/AC_het\n' \
+        -f '%CHROM\t%POS\t%REF\t%ALT\t[%AD]\t%INFO/ANN\t%INFO/CLNSIG\t%INFO/CLNDN\t%INFO/AF_hom\t%INFO/AF_het\t%INFO/AC_hom\t%INFO/AC_het\n' \
         "${VCF_GNOMAD}" \
     | awk 'BEGIN {OFS="\t"} {
-        n = split($7, transcripts, ",")
+        # Calcular AF_ALT y DP_TOTAL desde el campo AD (ref,alt)
+        split($5, ad, ",")
+        ad_ref = (ad[1] != "." && ad[1] != "") ? ad[1]+0 : 0
+        ad_alt = (ad[2] != "." && ad[2] != "") ? ad[2]+0 : 0
+        dp_total = ad_ref + ad_alt
+        af_alt = (dp_total > 0) ? (ad_alt / dp_total) : "."
+        if (af_alt != ".") af_alt = sprintf("%.4f", af_alt)
+ 
+        # Parsear ANN de SnpEff (primer transcrito)
+        n = split($6, transcripts, ",")
         split(transcripts[1], ann, "|")
-        gene   = ann[4]
-        effect = ann[2]
-        impact = ann[3]
-        hgvs_c = ann[10]
-        hgvs_p = ann[11]
-        print $1,$2,$3,$4,$5,$6,gene,effect,impact,hgvs_c,hgvs_p,$8,$9,$10,$11,$12,$13
+        gene   = (ann[4] != "") ? ann[4] : "."
+        effect = (ann[2] != "") ? ann[2] : "."
+        impact = (ann[3] != "") ? ann[3] : "."
+        hgvs_c = (ann[10] != "") ? ann[10] : "."
+        hgvs_p = (ann[11] != "") ? ann[11] : "."
+ 
+        print $1,$2,$3,$4,af_alt,dp_total,gene,effect,impact,hgvs_c,hgvs_p,$7,$8,$9,$10,$11,$12
     }' >> "${TSV_OUT}"
 
     N_TSV=$(tail -n +2 "${TSV_OUT}" | wc -l)
@@ -360,6 +405,53 @@ for SAMPLE in "${SAMPLES[@]}"; do
         echo "-------------------------------------------------------------------------"
         echo ""
         printf "  %-35s %s\n" "Haplogrupo:"              "${HAPLOGROUP}"
+        echo ""
+        echo "  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---"
+        # Parsear el archivo de haplogrupo y formatear como tabla
+        awk -F'\t' 'NR==1 {
+            # Imprimir cabecera de tabla
+            printf "  %-15s %-8s %-8s %-12s %s\n", "SampleID", "Haplogr.", "Calidad", "Rango", "Polimorfismos encontrados"
+            printf "  %-15s %-8s %-8s %-12s %s\n", "---------------", "--------", "--------", "------------", "------------------------"
+        }
+        NR==2 {
+            # Limpiar comillas
+            gsub(/"/, "")
+            sampleid = $1
+            haplogroup = $2
+            quality   = $4
+            range_val = $5
+            found     = $7
+            remaining = $8
+            not_found = $6
+ 
+            printf "  %-15s %-8s %-8s %-12s\n", sampleid, haplogroup, quality, range_val
+            printf "\n"
+            if (found != "") {
+                printf "  Polimorfismos haplogrupo encontrados:\n"
+                n = split(found, poly, " ")
+                line = "    "
+                for (i=1; i<=n; i++) {
+                    line = line poly[i] "  "
+                    if (length(line) > 75) { printf "%s\n", line; line = "    " }
+                }
+                if (line != "    ") printf "%s\n", line
+            }
+            if (not_found != "") {
+                printf "\n  Polimorfismos NO encontrados (ausentes en muestra):\n"
+                printf "    %s\n", not_found
+            }
+            if (remaining != "") {
+                printf "\n  Polimorfismos privados / restantes:\n"
+                n = split(remaining, rem, " ")
+                line = "    "
+                for (i=1; i<=n; i++) {
+                    line = line rem[i] "  "
+                    if (length(line) > 75) { printf "%s\n", line; line = "    " }
+                }
+                if (line != "    ") printf "%s\n", line
+            }
+        }' "${HAPLO_OUT}"
+        echo ""
         printf "  %-35s %s\n" "Calidad clasificacion:"   "${HAPLO_QUALITY}"
         echo ""
         echo "  --- Variantes anotadas ---"
@@ -392,12 +484,7 @@ for SAMPLE in "${SAMPLES[@]}"; do
 done
 
 # --------------------------------------------------------------------------------------------
-# 4. GENERACION DEL INFORME HTML
-# --------------------------------------------------------------------------------------------
-
-
-# --------------------------------------------------------------------------------------------
-# 5. CIERRE DEL INFORME
+# 4. CIERRE DEL INFORME
 # --------------------------------------------------------------------------------------------
 
 {

@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"SAMPLE"	"H1"	"1"	"0.7773"	"1-16569"	"8860G"	"263G 750G 1438G 3010A 4769G 15326G"	"228A (localPrivateMutation) 8856A (localPrivateMutation) 13708A (localPrivateMutation) 16140C (localPrivateMutation) 16519C (hotspot)"	"13708A [A458T| Codon 1 | ND5 ]"	"228A 263G 750G 1438G 3010A 4769G 8856A 13708A 15326G 16140C 16519C"

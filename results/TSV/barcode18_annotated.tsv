@@ -1,0 +1,68 @@
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# TSV ANOTADO - mtDNA ONT | Muestra: barcode18
+# Generado: mar jun 23 20:06:49 CEST 2026
+# Referencia: NC_012920.1 (rCRS)
+#
+# VERSIONES DE BASES DE DATOS:
+# Base_de_datos             Version         Fuente                                                  Fecha_descarga
+# Haplogrep 3                                                                                       3.2.2             https://github.com/genepi/haplogrep3/releases/download/v3.2.2/haplogrep3-3.2.2-linux.zip 2026-05-11 12:03:08
+#
+# LEYENDA DE COLUMNAS:
+# CHROM      : Cromosoma / contig de referencia (NC_012920.1)
+# POS        : Posicion en la referencia (rCRS)
+# REF        : Alelo de referencia
+# ALT        : Alelo alternativo
+# AF_ALT     : Frecuencia del alelo alternativo (heteroplasma)= AD_ALT / DP_TOTAL
+# DP_TOTAL   : Cobertura total en la posicion
+# GENE       : Gen mitocondrial afectado (anotacion SnpEff)
+# EFFECT     : Efecto funcional predicho (SnpEff)
+# IMPACT     : Impacto funcional: HIGH / MODERATE / LOW / MODIFIER
+# HGVS_C     : Nomenclatura HGVS a nivel de ADN (c.)
+# HGVS_P     : Nomenclatura HGVS a nivel de proteina (p.); '.' si no aplica
+# CLNSIG     : Clasificacion clinica ClinVar (Pathogenic, Benign, VUS, etc.)
+# CLNDN      : Nombre de la enfermedad asociada en ClinVar
+# AF_hom     : Frecuencia de homoplasmia en gnomAD v3.1
+# AF_het     : Frecuencia de heteroplasmia en gnomAD v3.1
+# AC_hom     : Numero de individuos homoplasmaticos en gnomAD v3.1
+# AC_het     : Numero de individuos heteroplasmaticos en gnomAD v3.1
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CHROM	POS	REF	ALT	AF_ALT	DP_TOTAL	GENE	EFFECT	IMPACT	HGVS_C	HGVS_P	CLNSIG	CLNDN	AF_hom	AF_het	AC_hom	AC_het
+NC_012920.1	73	A	G	0.9749	439	MT-TF	upstream_gene_variant	MODIFIER	n.-504A>G	.	.	.	0.715743	0.00010683	40199	6
+NC_012920.1	150	C	T	0.9802	505	MT-TF	upstream_gene_variant	MODIFIER	n.-427C>T	.	.	.	0.166279	0.000657019	9364	37
+NC_012920.1	185	G	A	0.9712	521	MT-TF	upstream_gene_variant	MODIFIER	n.-392G>A	.	.	.	0.0501046	0.000957073	2827	54
+NC_012920.1	189	A	G	0.9607	585	MT-TF	upstream_gene_variant	MODIFIER	n.-388A>G	.	.	.	0.077394	0.00139224	4336	78
+NC_012920.1	195	T	C	0.9675	523	MT-TF	upstream_gene_variant	MODIFIER	n.-382T>C	.	.	.	0.276064	0.00240753	15480	135
+NC_012920.1	263	A	G	0.9497	557	MT-TF	upstream_gene_variant	MODIFIER	n.-314A>G	.	.	.	0.990695	0.000194966	55895	11
+NC_012920.1	295	C	T	0.9339	590	MT-TF	upstream_gene_variant	MODIFIER	n.-282C>T	.	.	.	0.056036	1.77217e-05	3162	1
+NC_012920.1	489	T	C	0.9909	660	MT-TF	upstream_gene_variant	MODIFIER	n.-88T>C	.	.	.	0.109352	3.54925e-05	6162	2
+NC_012920.1	750	A	G	0.9820	668	MT-TV	upstream_gene_variant	MODIFIER	n.-852A>G	.	.	.	0.983408	0.00010647	55419	6
+NC_012920.1	1438	A	G	0.8107	898	MT-TV	upstream_gene_variant	MODIFIER	n.-164A>G	.	.	.	0.956096	7.11579e-05	53745	4
+NC_012920.1	2706	A	G	0.9767	1201	MT-TL1	upstream_gene_variant	MODIFIER	n.-524A>G	.	.	.	0.739491	8.92522e-05	41427	5
+NC_012920.1	3106	CN	C	0.9404	1141	MT-TL1	upstream_gene_variant	MODIFIER	n.-123delA	.	.	.	.	.	.	.
+NC_012920.1	4011	C	T	0.9650	971	MT-ND1	synonymous_variant	LOW	c.705C>T	p.Asn235Asn	.	.	0.000496164	3.54403e-05	28	2
+NC_012920.1	4216	T	C	0.9716	1410	MT-ND1	missense_variant	MODERATE	c.910T>C	p.Tyr304His	.	.	0.117561	5.36807e-05	6570	3
+NC_012920.1	4769	A	G	1.0000	992	MT-ND2	synonymous_variant	LOW	c.300A>G	p.Met100Met	.	.	0.983868	3.54931e-05	55440	2
+NC_012920.1	6671	T	C	0.9857	910	MT-CO1	synonymous_variant	LOW	c.768T>C	p.His256His	.	.	0.00278221	1.77211e-05	157	1
+NC_012920.1	7028	C	T	0.9627	912	MT-CO1	synonymous_variant	LOW	c.1125C>T	p.Ala375Ala	.	.	0.749396	3.60373e-05	41590	2
+NC_012920.1	7476	C	T	0.9727	770	MT-TQ	upstream_gene_variant	MODIFIER	n.-3076G>A	.	.	.	0.0110221	0	622	0
+NC_012920.1	8292	G	A	0.9892	740	MT-TQ	upstream_gene_variant	MODIFIER	n.-3892C>T	.	.	.	0.00159521	0.000159521	90	9
+NC_012920.1	10398	A	G	0.9019	907	MT-ND3	missense_variant	MODERATE	c.340A>G	p.Thr114Ala	.	.	0.41848	0.000142425	23506	8
+NC_012920.1	10499	A	G	0.9783	739	MT-ND4L	synonymous_variant	LOW	c.30A>G	p.Leu10Leu	.	.	0.00742473	1.77201e-05	419	1
+NC_012920.1	11002	A	G	0.9406	707	MT-ND4	synonymous_variant	LOW	c.243A>G	p.Gln81Gln	.	.	0.0173871	0.000141791	981	8
+NC_012920.1	11251	A	G	0.9704	709	MT-ND4	synonymous_variant	LOW	c.492A>G	p.Leu164Leu	.	.	0.110087	0	6211	0
+NC_012920.1	11377	G	A	0.9889	810	MT-ND4	synonymous_variant	LOW	c.618G>A	p.Lys206Lys	.	.	0.0136124	1.77245e-05	768	1
+NC_012920.1	11719	G	A	0.9875	642	MT-ND4	synonymous_variant	LOW	c.960G>A	p.Gly320Gly	.	.	0.711036	5.34855e-05	39882	3
+NC_012920.1	12570	A	G	0.9646	1470	MT-ND5	synonymous_variant	LOW	c.234A>G	p.Leu78Leu	.	.	0.00097459	0	55	0
+NC_012920.1	12612	A	G	0.9954	1510	MT-ND5	synonymous_variant	LOW	c.276A>G	p.Val92Val	.	.	0.0577547	0.00017727	3258	10
+NC_012920.1	13708	G	A	0.9923	1174	MT-ND5	missense_variant	MODERATE	c.1372G>A	p.Ala458Thr	.	.	0.0756374	0.000372598	4263	21
+NC_012920.1	14766	C	T	0.9934	1208	MT-CYB	missense_variant	MODERATE	c.20C>T	p.Thr7Ile	.	.	0.70679	5.34893e-05	39641	3
+NC_012920.1	15257	G	A	0.9761	1003	MT-CYB	missense_variant	MODERATE	c.511G>A	p.Asp171Asn	.	.	0.0127428	1.7723e-05	719	1
+NC_012920.1	15326	A	G	0.9573	1194	MT-CYB	missense_variant	MODERATE	c.580A>G	p.Thr194Ala	.	.	0.993422	0.000212774	56027	12
+NC_012920.1	15452	C	A	0.9082	1144	MT-CYB	missense_variant	MODERATE	c.706C>A	p.Leu236Ile	.	.	0.110308	0	6223	0
+NC_012920.1	15679	A	G	0.8896	1486	MT-CYB	synonymous_variant	LOW	c.933A>G	p.Lys311Lys	.	.	0.00109863	0	62	0
+NC_012920.1	16069	C	T	0.9939	991	MT-ND6	upstream_gene_variant	MODIFIER	c.-1396G>A	.	.	.	0.0562085	0	3171	0
+NC_012920.1	16126	T	C	0.9638	1327	MT-ND6	upstream_gene_variant	MODIFIER	c.-1453A>G	.	.	.	0.14321	0.000443813	8067	25
+NC_012920.1	16241	A	G	0.9695	984	MT-ND6	upstream_gene_variant	MODIFIER	c.-1568T>C	.	.	.	0.0022683	5.31632e-05	128	3
+NC_012920.1	16274	G	A	0.8856	1215	MT-ND6	upstream_gene_variant	MODIFIER	c.-1601C>T	.	.	.	0.0138106	0.000352217	745	19
+NC_012920.1	16399	A	G	0.9766	897	MT-ND6	upstream_gene_variant	MODIFIER	c.-1726T>C	.	.	.	0.0349659	0.000327124	1924	18
+NC_012920.1	16519	T	C	0.9966	893	MT-ND6	upstream_gene_variant	MODIFIER	c.-1846A>G	.	.	.	0.657251	0.00153029	35648	83
