@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"barcode01"	"H10a"	"1"	"1.0000"	"1-16569"	""	"263G 750G 1438G 4216C 4769G 8860G 14470A 15326G"	"312T (globalPrivateMutation) 8162C (globalPrivateMutation) 11171G (globalPrivateMutation) 16519C (hotspot)"	"8162C [Y193H| Codon 1 | COX2 ] 11171G [N138D| Codon 1 | ND4 ]"	"263G 312T 750G 1438G 4216C 4769G 8162C 8860G 11171G 14470A 15326G 16519C"

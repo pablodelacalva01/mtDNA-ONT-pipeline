@@ -1,0 +1,702 @@
+--------------------------------------------------------------------------------------------
+INFORME DE ANOTACION - mtDNA ONT
+Fecha:          Tue Oct 13 17:21:10 CEST 2026
+Referencia:     NC_012920.1 (rCRS)
+--------------------------------------------------------------------------------------------
+SnpEff DB:      GRCh38.99
+ClinVar:        /home/pablo/pipeline_ONT_v1/Data/Annotation_DBs/clinvar_mt_rCRS.vcf.gz
+gnomAD:         /home/pablo/pipeline_ONT_v1/Data/Annotation_DBs/gnomad_mt_rCRS.vcf.gz
+Input:          union de las 4 combinaciones (MC, MM, NC, NM), sin filtro de AF
+AF / DP:        pileup por alineador (MAPQ >= 20, BASEQ >= 12)
+Versiones de bases de datos utilizadas:
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode01
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         H10a
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode01       H10a     1.0000   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    263G  750G  1438G  4216C  4769G  8860G  14470A  15326G  
+
+  Polimorfismos privados / restantes:
+    312T  (globalPrivateMutation)  8162C  (globalPrivateMutation)  11171G  (globalPrivateMutation)  
+    16519C  (hotspot)  
+
+  Calidad clasificacion:              1.0000
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     18
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  13
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                    9
+  Detectadas por 3:                        0
+  Detectadas por 2:                        6
+  Detectadas por 1 (revisar en IGV):       3
+  Clair3 + Mutserve2 (cross-caller):       9
+  Indels:                                  3
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                                8
+  LOW:                                     2
+  MODIFIER:                                8
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):        9
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode01/barcode01_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode01_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode01_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode86
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         J1c2e2
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode86       J1c2e2   0.9846   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  185A  188G  228A  263G  295T  462T  489C  709A  750G  1438G  2706G  
+    3010A  4216C  4232C  4769G  7028T  8404C  8860G  10398G  11251G  11719A  
+    12612G  13708A  14766T  14798C  15326G  15452A  16069T  16126C  16278T  
+    16366T  
+
+  Polimorfismos privados / restantes:
+    408A  (localPrivateMutation)  10201A  (globalPrivateMutation)  13513A  (globalPrivateMutation)  
+    15056C  (globalPrivateMutation)  15595T  (globalPrivateMutation)  16519C  
+    (hotspot)  
+
+  Calidad clasificacion:              0.9846
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     46
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  41
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   31
+  Detectadas por 3:                        3
+  Detectadas por 2:                        7
+  Detectadas por 1 (revisar en IGV):       5
+  Clair3 + Mutserve2 (cross-caller):      34
+  Indels:                                  3
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                               15
+  LOW:                                     7
+  MODIFIER:                               24
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       32
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode86/barcode86_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode86_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode86_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode87
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         K1a4a1
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode87       K1a4a1   0.9628   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  263G  497T  750G  1189C  1438G  1811G  2706G  3480G  4769G  6260A  
+    7028T  8860G  9055A  9698C  10398G  10550G  11299C  11467G  11485C  11719A  
+    11840T  12308G  12372A  13740C  14167T  14766T  14798C  15326G  16224C  
+    16311C  
+
+  Polimorfismos NO encontrados (ausentes en muestra):
+    16093C
+
+  Polimorfismos privados / restantes:
+    152C  (localPrivateMutation)  3243G  (globalPrivateMutation)  5563A  (localPrivateMutation)  
+    7270C  (localPrivateMutation)  10201A  (globalPrivateMutation)  12867T  
+    (globalPrivateMutation)  15056C  (globalPrivateMutation)  15154A  (globalPrivateMutation)  
+    16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9628
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     45
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  40
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   34
+  Detectadas por 3:                        1
+  Detectadas por 2:                        7
+  Detectadas por 1 (revisar en IGV):       3
+  Clair3 + Mutserve2 (cross-caller):      35
+  Indels:                                  2
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                               11
+  LOW:                                    16
+  MODIFIER:                               18
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       31
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode87/barcode87_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode87_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode87_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode88
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         H3ap
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode88       H3ap     1.0000   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    263G  750G  1438G  4769G  6776C  8860G  10915C  15326G  
+
+  Polimorfismos privados / restantes:
+    1489A  (globalPrivateMutation)  3243G  (globalPrivateMutation)  3489G  (globalPrivateMutation)  
+    15595T  (globalPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              1.0000
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     20
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  17
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   10
+  Detectadas por 3:                        0
+  Detectadas por 2:                        7
+  Detectadas por 1 (revisar en IGV):       3
+  Clair3 + Mutserve2 (cross-caller):      10
+  Indels:                                  4
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    1
+  MODERATE:                                3
+  LOW:                                     5
+  MODIFIER:                               11
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       11
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode88/barcode88_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode88_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode88_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode89
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         H2a2
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode89       H2a2     0.5606   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    263G  8860G  15326G  
+
+  Polimorfismos privados / restantes:
+    93G  (localPrivateMutation)  189G  (localPrivateMutation)  204A  (globalPrivateMutation)  
+    654C  (localPrivateMutation)  720C  (globalPrivateMutation)  866G  (globalPrivateMutation)  
+    1081C  (globalPrivateMutation)  1082G  (globalPrivateMutation)  1504C  (globalPrivateMutation)  
+    1578G  (globalPrivateMutation)  1630G  (globalPrivateMutation)  1999G  (globalPrivateMutation)  
+    2109G  (globalPrivateMutation)  2736T  (globalPrivateMutation)  2824T  (globalPrivateMutation)  
+    2854C  (globalPrivateMutation)  2978C  (globalPrivateMutation)  3290C  (localPrivateMutation)  
+    3434G  (localPrivateMutation)  4105G  (globalPrivateMutation)  4435G  (localPrivateMutation)  
+    4674G  (localPrivateMutation)  6040G  (localPrivateMutation)  6076C  (globalPrivateMutation)  
+    6126G  (globalPrivateMutation)  6629G  (localPrivateMutation)  6792G  (globalPrivateMutation)  
+    7122T  (globalPrivateMutation)  7209G  (globalPrivateMutation)  7270C  (localPrivateMutation)  
+    7299G  (localPrivateMutation)  7375G  (globalPrivateMutation)  7543G  (globalPrivateMutation)  
+    7916G  (globalPrivateMutation)  8160G  (globalPrivateMutation)  8521G  (localPrivateMutation)  
+    8718G  (localPrivateMutation)  8774G  (localPrivateMutation)  9367C  (globalPrivateMutation)  
+    9756C  (globalPrivateMutation)  9769C  (globalPrivateMutation)  9934G  (globalPrivateMutation)  
+    10237C  (localPrivateMutation)  10303A  (globalPrivateMutation)  11171G  
+    (globalPrivateMutation)  12612G  (localPrivateMutation)  13327G  (localPrivateMutation)  
+    13557G  (localPrivateMutation)  13676G  (globalPrivateMutation)  13722G  
+    (localPrivateMutation)  13952G  (globalPrivateMutation)  14037G  (localPrivateMutation)  
+    14071G  (localPrivateMutation)  14268C  (globalPrivateMutation)  14587G  
+    (localPrivateMutation)  14605G  (localPrivateMutation)  14841G  (globalPrivateMutation)  
+    15056C  (globalPrivateMutation)  15654C  (localPrivateMutation)  15924G  
+    (localPrivateMutation)  16249C  (localPrivateMutation)  16291T  (localPrivateMutation)  
+    16298C  (localPrivateMutation)  16311C  (localPrivateMutation)  
+
+  Calidad clasificacion:              0.5606
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     94
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  84
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                    9
+  Detectadas por 3:                        0
+  Detectadas por 2:                       60
+  Detectadas por 1 (revisar en IGV):      25
+  Clair3 + Mutserve2 (cross-caller):       9
+  Indels:                                  2
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    1
+  MODERATE:                               45
+  LOW:                                    12
+  MODIFIER:                               36
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       13
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode89/barcode89_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode89_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode89_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode90
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         J1c2r
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode90       J1c2r    0.9876   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  185A  188G  228A  263G  295T  462T  489C  750G  1438G  2706G  3010A  
+    4216C  4769G  7028T  8860G  10398G  11002G  11251G  11719A  12612G  13032G  
+    13708A  14325C  14766T  14798C  15326G  15452A  16069T  16126C  16186T  
+
+  Polimorfismos privados / restantes:
+    3243G  (globalPrivateMutation)  15056C  (globalPrivateMutation)  15217A  
+    (localPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9876
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     43
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  39
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   33
+  Detectadas por 3:                        0
+  Detectadas por 2:                        5
+  Detectadas por 1 (revisar en IGV):       5
+  Clair3 + Mutserve2 (cross-caller):      33
+  Indels:                                  4
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    1
+  MODERATE:                               10
+  LOW:                                    11
+  MODIFIER:                               21
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       32
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode90/barcode90_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode90_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode90_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode91
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         J1c2r
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode91       J1c2r    0.9347   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  185A  188G  228A  263G  295T  462T  489C  750G  1438G  2706G  3010A  
+    4216C  4769G  7028T  8860G  10398G  11002G  11251G  11719A  12612G  13032G  
+    13708A  14325C  14766T  14798C  15326G  15452A  16069T  16126C  16186T  
+
+  Polimorfismos privados / restantes:
+    382T  (localPrivateMutation)  3243G  (globalPrivateMutation)  6464T  (globalPrivateMutation)  
+    14249A  (localPrivateMutation)  14921A  (localPrivateMutation)  15217A  
+    (localPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9347
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     53
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  42
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   33
+  Detectadas por 3:                        1
+  Detectadas por 2:                        7
+  Detectadas por 1 (revisar en IGV):      12
+  Clair3 + Mutserve2 (cross-caller):      34
+  Indels:                                  5
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    2
+  MODERATE:                               16
+  LOW:                                    10
+  MODIFIER:                               25
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       31
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode91/barcode91_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode91_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode91_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode92
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         A2+(64)
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode92       A2+(64)  1.0000   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    64T  73G  146C  152C!  153G  235G  263G  663G  750G  1438G  1736G  2706G  
+    4248C  4769G  4824G  7028T  8027A  8794T  8860G  11719A  12007A  12705T  
+    14766T  15326G  16111T  16223T  16290T  16319A  16362C  
+
+  Polimorfismos privados / restantes:
+    312T  (globalPrivateMutation)  2202T  (globalPrivateMutation)  7618T  (globalPrivateMutation)  
+    10201A  (globalPrivateMutation)  15056C  (globalPrivateMutation)  15595T  
+    (globalPrivateMutation)  16549T  (globalPrivateMutation)  
+
+  Calidad clasificacion:              1.0000
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     43
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  37
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   28
+  Detectadas por 3:                        0
+  Detectadas por 2:                       10
+  Detectadas por 1 (revisar en IGV):       5
+  Clair3 + Mutserve2 (cross-caller):      28
+  Indels:                                  4
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                                9
+  LOW:                                     9
+  MODIFIER:                               25
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       30
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode92/barcode92_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode92_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode92_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode93
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         C1d1
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode93       C1d1     0.9007   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  194T  263G  489C  750G  1438G  2706G  3552A  4715G  4769G  7028T  7196A  
+    7697A  8584A  8701G  8860G  9540C  9545G  10398G  10400T  10873C  11719A  
+    11914A  12705T  13263G  14318C  14766T  14783C  15043A  15301A  15326G  
+    15487T  16051G  16223T  16325C  16327T  
+
+  Polimorfismos NO encontrados (ausentes en muestra):
+    249d 290d 291d 16298C
+
+  Polimorfismos privados / restantes:
+    151T  (localPrivateMutation)  3565G  (localPrivateMutation)  7403G  (localPrivateMutation)  
+    8007A  (globalPrivateMutation)  8856A  (localPrivateMutation)  9716C  (localPrivateMutation)  
+    10197A  (globalPrivateMutation)  15056C  (globalPrivateMutation)  16129A  
+    (localPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9007
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     56
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  50
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   42
+  Detectadas por 3:                        0
+  Detectadas por 2:                        9
+  Detectadas por 1 (revisar en IGV):       5
+  Clair3 + Mutserve2 (cross-caller):      42
+  Indels:                                  5
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                               14
+  LOW:                                    20
+  MODIFIER:                               22
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       43
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode93/barcode93_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode93_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode93_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode94
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         A2
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode94       A2       0.8657   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  146C  152C!  153G  235G  263G  663G  750G  1438G  1736G  2706G  4248C  
+    4769G  4824G  7028T  8027A  8794T  8860G  11719A  12007A  12705T  14766T  
+    15326G  16111T  16223T  16290T  16319A  16362C  
+
+  Polimorfismos privados / restantes:
+    151T  (localPrivateMutation)  310C  (localPrivateMutation)  3277A  (localPrivateMutation)  
+    4243G  (localPrivateMutation)  7844G  (localPrivateMutation)  8855T  (localPrivateMutation)  
+    9413T  (globalPrivateMutation)  10118C  (localPrivateMutation)  11778A  
+    (localPrivateMutation)  14268C  (globalPrivateMutation)  14470C  (localPrivateMutation)  
+    16129A  (localPrivateMutation)  
+
+  Calidad clasificacion:              0.8657
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     52
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  45
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   34
+  Detectadas por 3:                        0
+  Detectadas por 2:                        8
+  Detectadas por 1 (revisar en IGV):      10
+  Clair3 + Mutserve2 (cross-caller):      34
+  Indels:                                  4
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                               15
+  LOW:                                    10
+  MODIFIER:                               27
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       33
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode94/barcode94_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode94_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode94_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode95
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         D1f1
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode95       D1f1     0.9521   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    73G  263G  489C  750G  1438G  2092T  2706G  3010A  4769G  4883T  5178A  
+    7028T  8414T  8701G  8860G  9540C  10398G  10400T  10873C  10874T  11719A  
+    12705T  14668T  14766T  14783C  15043A  15301A  15326G  16142T  16179T  
+    16223T  16295T  16325C  16362C  16497G  
+
+  Polimorfismos privados / restantes:
+    1489A  (globalPrivateMutation)  9911T  (localPrivateMutation)  11521G  (localPrivateMutation)  
+    11778A  (localPrivateMutation)  15056C  (globalPrivateMutation)  15595T  
+    (globalPrivateMutation)  16311C  (localPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9521
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     52
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  47
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   36
+  Detectadas por 3:                        2
+  Detectadas por 2:                        8
+  Detectadas por 1 (revisar en IGV):       6
+  Clair3 + Mutserve2 (cross-caller):      39
+  Indels:                                  6
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    3
+  MODERATE:                                9
+  LOW:                                    17
+  MODIFIER:                               23
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       33
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode95/barcode95_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode95_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode95_haplogroup.txt
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode96
+-------------------------------------------------------------------------
+
+  Haplogrupo:                         H1bx
+
+  --- Clasificacion HaploGrep3 (matriz de polimorfismos) ---
+  SampleID        Haplogr. Calidad  Rango        Polimorfismos encontrados
+  --------------- -------- -------- ------------ ------------------------
+  barcode96       H1bx     0.9024   1-16569     
+
+  Polimorfismos haplogrupo encontrados:
+    263G  750G  1438G  3010A  4769G  8740T  8860G  15326G  
+
+  Polimorfismos NO encontrados (ausentes en muestra):
+    789C
+
+  Polimorfismos privados / restantes:
+    10143A  (localPrivateMutation)  15056C  (globalPrivateMutation)  16183C  
+    (hotspot)  16189C  (localPrivateMutation)  16519C  (hotspot)  
+
+  Calidad clasificacion:              0.9024
+
+  --- Variantes anotadas ---
+  Total variantes anotadas (union 4):     19
+  Con anotacion ClinVar:                   0
+  Con frecuencia gnomAD:                  18
+
+  --- Soporte entre combinaciones (MC, MM, NC, NM) ---
+  Detectadas por las 4:                   11
+  Detectadas por 3:                        0
+  Detectadas por 2:                        5
+  Detectadas por 1 (revisar en IGV):       3
+  Clair3 + Mutserve2 (cross-caller):      11
+  Indels:                                  5
+
+  --- Impacto funcional (SnpEff) ---
+  HIGH:                                    0
+  MODERATE:                                4
+  LOW:                                     3
+  MODIFIER:                               12
+
+  --- Clasificacion ClinVar ---
+  Patogenicas / Prob. patogenicas:         0
+  Benignas / Prob. benignas:               0
+  VUS (significado incierto):              0
+
+  --- Frecuencia poblacional (gnomAD) ---
+  Variantes comunes (AF_hom >= 1%):       10
+
+  --- Archivos generados ---
+  VCF anotado final:                  /home/pablo/pipeline_ONT_v1/Results/Variants_Annotated/barcode96/barcode96_gnomad.vcf.gz
+  TSV clinico:                        /home/pablo/pipeline_ONT_v1/Results/TSV/barcode96_annotated.tsv
+  Haplogrupo:                         /home/pablo/pipeline_ONT_v1/Results/Haplogroups/barcode96_haplogroup.txt
+
+-------------------------------------------------------------------------
+  FIN DEL INFORME DE ANOTACION
+  Completado: Tue Oct 13 17:30:20 CEST 2026
+  Informes HTML: /home/pablo/pipeline_ONT_v1/Data/Processed/05.Annotation/html/
+-------------------------------------------------------------------------

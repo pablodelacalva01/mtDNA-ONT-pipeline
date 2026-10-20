@@ -1,0 +1,3220 @@
+------------------------------------------------------------------------------
+INFORME GLOBAL DE CALIDAD
+Fecha: Thu Oct  8 17:16:36 CEST 2026
+ ------------------------------------------------------------------------------
+------------------------------------------------------------
+SAMPLE: barcode01 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode01/barcode01_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+599 + 0 in total (QC-passed reads + QC-failed reads)
+559 + 0 primary
+0 + 0 secondary
+40 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+441 + 0 mapped (73.62% : N/A)
+401 + 0 primary mapped (71.74% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	441	0
+*	0	0	158
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	441	16569	100	35.3922	29.2	59.8
+# STATS
+SN	raw total sequences:	559	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	559
+SN	is sorted:	1
+SN	1st fragments:	559
+SN	last fragments:	0
+SN	reads mapped:	401
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	158
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	40
+SN	total length:	690311	# ignores clipping
+SN	total first fragment length:	690311	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	591769	# ignores clipping
+SN	bases mapped (cigar):	589806	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	15209	# from NM fields
+SN	error rate:	2.578644e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1235
+SN	average first fragment length:	1235
+SN	average last fragment length:	0
+SN	maximum length:	6627
+SN	maximum first fragment length:	6627
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode86 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode86/barcode86_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+5225 + 0 in total (QC-passed reads + QC-failed reads)
+4803 + 0 primary
+0 + 0 secondary
+422 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+4327 + 0 mapped (82.81% : N/A)
+3905 + 0 primary mapped (81.30% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4327	0
+*	0	0	898
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4327	16569	100	436.751	29.2	59.7
+# STATS
+SN	raw total sequences:	4803	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4803
+SN	is sorted:	1
+SN	1st fragments:	4803
+SN	last fragments:	0
+SN	reads mapped:	3905
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	898
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	422
+SN	total length:	7938001	# ignores clipping
+SN	total first fragment length:	7938001	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	7299597	# ignores clipping
+SN	bases mapped (cigar):	7279208	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	198738	# from NM fields
+SN	error rate:	2.730215e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1653
+SN	average first fragment length:	1653
+SN	average last fragment length:	0
+SN	maximum length:	9304
+SN	maximum first fragment length:	9304
+SN	maximum last fragment length:	0
+SN	average quality:	29.1
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode87 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode87/barcode87_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+6002 + 0 in total (QC-passed reads + QC-failed reads)
+5579 + 0 primary
+0 + 0 secondary
+423 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+5876 + 0 mapped (97.90% : N/A)
+5453 + 0 primary mapped (97.74% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5876	0
+*	0	0	126
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	5876	16569	100	562.108	28.8	59.8
+# STATS
+SN	raw total sequences:	5579	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5579
+SN	is sorted:	1
+SN	1st fragments:	5579
+SN	last fragments:	0
+SN	reads mapped:	5453
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	126
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	423
+SN	total length:	9470828	# ignores clipping
+SN	total first fragment length:	9470828	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9391161	# ignores clipping
+SN	bases mapped (cigar):	9370359	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	261953	# from NM fields
+SN	error rate:	2.795549e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1698
+SN	average first fragment length:	1698
+SN	average last fragment length:	0
+SN	maximum length:	11509
+SN	maximum first fragment length:	11509
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode88 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode88/barcode88_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+3076 + 0 in total (QC-passed reads + QC-failed reads)
+2870 + 0 primary
+0 + 0 secondary
+206 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2513 + 0 mapped (81.70% : N/A)
+2307 + 0 primary mapped (80.38% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2513	0
+*	0	0	563
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2513	16569	100	247.922	29.2	59.7
+# STATS
+SN	raw total sequences:	2870	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2870
+SN	is sorted:	1
+SN	1st fragments:	2870
+SN	last fragments:	0
+SN	reads mapped:	2307
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	563
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	206
+SN	total length:	4787475	# ignores clipping
+SN	total first fragment length:	4787475	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4147956	# ignores clipping
+SN	bases mapped (cigar):	4131545	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	105226	# from NM fields
+SN	error rate:	2.546892e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1668
+SN	average first fragment length:	1668
+SN	average last fragment length:	0
+SN	maximum length:	30824
+SN	maximum first fragment length:	30824
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode89 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode89/barcode89_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+4738 + 0 in total (QC-passed reads + QC-failed reads)
+4202 + 0 primary
+0 + 0 secondary
+536 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+3884 + 0 mapped (81.98% : N/A)
+3348 + 0 primary mapped (79.68% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3884	0
+*	0	0	854
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3884	16569	100	374.455	28.8	59.7
+# STATS
+SN	raw total sequences:	4202	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4202
+SN	is sorted:	1
+SN	1st fragments:	4202
+SN	last fragments:	0
+SN	reads mapped:	3348
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	854
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	536
+SN	total length:	6764732	# ignores clipping
+SN	total first fragment length:	6764732	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6260641	# ignores clipping
+SN	bases mapped (cigar):	6242329	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	181409	# from NM fields
+SN	error rate:	2.906111e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1610
+SN	average first fragment length:	1610
+SN	average last fragment length:	0
+SN	maximum length:	7187
+SN	maximum first fragment length:	7187
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode90 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode90/barcode90_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+8119 + 0 in total (QC-passed reads + QC-failed reads)
+7897 + 0 primary
+0 + 0 secondary
+222 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+1489 + 0 mapped (18.34% : N/A)
+1267 + 0 primary mapped (16.04% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	1489	0
+*	0	0	6630
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1489	16569	100	153.164	29	59.8
+# STATS
+SN	raw total sequences:	7897	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	7897
+SN	is sorted:	1
+SN	1st fragments:	7897
+SN	last fragments:	0
+SN	reads mapped:	1267
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	6630
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	222
+SN	total length:	5772495	# ignores clipping
+SN	total first fragment length:	5772495	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	2561571	# ignores clipping
+SN	bases mapped (cigar):	2553074	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	69773	# from NM fields
+SN	error rate:	2.732902e-02	# mismatches / bases mapped (cigar)
+SN	average length:	731
+SN	average first fragment length:	731
+SN	average last fragment length:	0
+SN	maximum length:	36031
+SN	maximum first fragment length:	36031
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode91 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode91/barcode91_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+1098 + 0 in total (QC-passed reads + QC-failed reads)
+1024 + 0 primary
+0 + 0 secondary
+74 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+890 + 0 mapped (81.06% : N/A)
+816 + 0 primary mapped (79.69% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	890	0
+*	0	0	208
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	890	16569	100	85.8556	29	59.6
+# STATS
+SN	raw total sequences:	1024	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	1024
+SN	is sorted:	1
+SN	1st fragments:	1024
+SN	last fragments:	0
+SN	reads mapped:	816
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	208
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	74
+SN	total length:	1666075	# ignores clipping
+SN	total first fragment length:	1666075	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	1436943	# ignores clipping
+SN	bases mapped (cigar):	1431143	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	39806	# from NM fields
+SN	error rate:	2.781413e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1627
+SN	average first fragment length:	1627
+SN	average last fragment length:	0
+SN	maximum length:	24264
+SN	maximum first fragment length:	24264
+SN	maximum last fragment length:	0
+SN	average quality:	28.3
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode92 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode92/barcode92_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+5379 + 0 in total (QC-passed reads + QC-failed reads)
+5044 + 0 primary
+0 + 0 secondary
+335 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+5244 + 0 mapped (97.49% : N/A)
+4909 + 0 primary mapped (97.32% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5244	0
+*	0	0	135
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	5244	16569	100	552.72	29	59.8
+# STATS
+SN	raw total sequences:	5044	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5044
+SN	is sorted:	1
+SN	1st fragments:	5044
+SN	last fragments:	0
+SN	reads mapped:	4909
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	135
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	335
+SN	total length:	9325918	# ignores clipping
+SN	total first fragment length:	9325918	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9235449	# ignores clipping
+SN	bases mapped (cigar):	9213219	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	250569	# from NM fields
+SN	error rate:	2.719668e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1849
+SN	average first fragment length:	1849
+SN	average last fragment length:	0
+SN	maximum length:	7230
+SN	maximum first fragment length:	7230
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode93 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode93/barcode93_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+4481 + 0 in total (QC-passed reads + QC-failed reads)
+4117 + 0 primary
+0 + 0 secondary
+364 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+4234 + 0 mapped (94.49% : N/A)
+3870 + 0 primary mapped (94.00% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4234	0
+*	0	0	247
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4234	16569	100	400.919	28.8	59.8
+# STATS
+SN	raw total sequences:	4117	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4117
+SN	is sorted:	1
+SN	1st fragments:	4117
+SN	last fragments:	0
+SN	reads mapped:	3870
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	247
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	364
+SN	total length:	6903298	# ignores clipping
+SN	total first fragment length:	6903298	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6703305	# ignores clipping
+SN	bases mapped (cigar):	6682565	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	188641	# from NM fields
+SN	error rate:	2.822883e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1677
+SN	average first fragment length:	1677
+SN	average last fragment length:	0
+SN	maximum length:	35509
+SN	maximum first fragment length:	35509
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode94 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode94/barcode94_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+3774 + 0 in total (QC-passed reads + QC-failed reads)
+3412 + 0 primary
+0 + 0 secondary
+362 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+3494 + 0 mapped (92.58% : N/A)
+3132 + 0 primary mapped (91.79% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3494	0
+*	0	0	280
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3494	16569	100	336.999	29	59.8
+# STATS
+SN	raw total sequences:	3412	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	3412
+SN	is sorted:	1
+SN	1st fragments:	3412
+SN	last fragments:	0
+SN	reads mapped:	3132
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	280
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	362
+SN	total length:	5802777	# ignores clipping
+SN	total first fragment length:	5802777	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	5628565	# ignores clipping
+SN	bases mapped (cigar):	5617773	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	155362	# from NM fields
+SN	error rate:	2.765544e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1701
+SN	average first fragment length:	1701
+SN	average last fragment length:	0
+SN	maximum length:	10534
+SN	maximum first fragment length:	10534
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode95 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode95/barcode95_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+2932 + 0 in total (QC-passed reads + QC-failed reads)
+2746 + 0 primary
+0 + 0 secondary
+186 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2817 + 0 mapped (96.08% : N/A)
+2631 + 0 primary mapped (95.81% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2817	0
+*	0	0	115
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2817	16569	100	292.212	29.1	59.8
+# STATS
+SN	raw total sequences:	2746	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2746
+SN	is sorted:	1
+SN	1st fragments:	2746
+SN	last fragments:	0
+SN	reads mapped:	2631
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	115
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	186
+SN	total length:	4989607	# ignores clipping
+SN	total first fragment length:	4989607	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4882246	# ignores clipping
+SN	bases mapped (cigar):	4871065	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	131987	# from NM fields
+SN	error rate:	2.709613e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1817
+SN	average first fragment length:	1817
+SN	average last fragment length:	0
+SN	maximum length:	39998
+SN	maximum first fragment length:	39998
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode96 | TOOL: minimap2
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/minimap2/barcode96/barcode96_minimap2.bam
+------------------------------------------------------------
+# FLAGSTAT
+2729 + 0 in total (QC-passed reads + QC-failed reads)
+2455 + 0 primary
+0 + 0 secondary
+274 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2439 + 0 mapped (89.37% : N/A)
+2165 + 0 primary mapped (88.19% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2439	0
+*	0	0	290
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2439	16569	100	245.464	29	59.8
+# STATS
+SN	raw total sequences:	2455	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2455
+SN	is sorted:	1
+SN	1st fragments:	2455
+SN	last fragments:	0
+SN	reads mapped:	2165
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	290
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	274
+SN	total length:	4309596	# ignores clipping
+SN	total first fragment length:	4309596	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4104072	# ignores clipping
+SN	bases mapped (cigar):	4091136	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	105129	# from NM fields
+SN	error rate:	2.569677e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1755
+SN	average first fragment length:	1755
+SN	average last fragment length:	0
+SN	maximum length:	7971
+SN	maximum first fragment length:	7971
+SN	maximum last fragment length:	0
+SN	average quality:	28.9
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode01 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode01/barcode01_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+590 + 0 in total (QC-passed reads + QC-failed reads)
+559 + 0 primary
+0 + 0 secondary
+31 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+430 + 0 mapped (72.88% : N/A)
+399 + 0 primary mapped (71.38% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	430	0
+*	0	0	160
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	430	16568	99.994	35.0847	29.2	59.1
+# STATS
+SN	raw total sequences:	559	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	559
+SN	is sorted:	1
+SN	1st fragments:	559
+SN	last fragments:	0
+SN	reads mapped:	399
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	160
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	31
+SN	total length:	690311	# ignores clipping
+SN	total first fragment length:	690311	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	590198	# ignores clipping
+SN	bases mapped (cigar):	585279	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	14975	# from NM fields
+SN	error rate:	2.558609e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1235
+SN	average first fragment length:	1235
+SN	average last fragment length:	0
+SN	maximum length:	6627
+SN	maximum first fragment length:	6627
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode86 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode86/barcode86_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+5076 + 0 in total (QC-passed reads + QC-failed reads)
+4803 + 0 primary
+0 + 0 secondary
+273 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+4145 + 0 mapped (81.66% : N/A)
+3872 + 0 primary mapped (80.62% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4145	0
+*	0	0	931
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4145	16569	100	432.533	29.2	58.8
+# STATS
+SN	raw total sequences:	4803	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4803
+SN	is sorted:	1
+SN	1st fragments:	4803
+SN	last fragments:	0
+SN	reads mapped:	3872
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	931
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	4	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	273
+SN	total length:	7938001	# ignores clipping
+SN	total first fragment length:	7938001	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	7278595	# ignores clipping
+SN	bases mapped (cigar):	7215099	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	190000	# from NM fields
+SN	error rate:	2.633367e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1653
+SN	average first fragment length:	1653
+SN	average last fragment length:	0
+SN	maximum length:	9304
+SN	maximum first fragment length:	9304
+SN	maximum last fragment length:	0
+SN	average quality:	29.1
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode87 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode87/barcode87_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+5894 + 0 in total (QC-passed reads + QC-failed reads)
+5579 + 0 primary
+0 + 0 secondary
+315 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+5721 + 0 mapped (97.06% : N/A)
+5406 + 0 primary mapped (96.90% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5721	0
+*	0	0	173
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	5721	16569	100	557.411	28.9	59
+# STATS
+SN	raw total sequences:	5579	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5579
+SN	is sorted:	1
+SN	1st fragments:	5579
+SN	last fragments:	0
+SN	reads mapped:	5406
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	173
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	315
+SN	total length:	9470828	# ignores clipping
+SN	total first fragment length:	9470828	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9366662	# ignores clipping
+SN	bases mapped (cigar):	9300218	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	254711	# from NM fields
+SN	error rate:	2.738764e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1698
+SN	average first fragment length:	1698
+SN	average last fragment length:	0
+SN	maximum length:	11509
+SN	maximum first fragment length:	11509
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode88 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode88/barcode88_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+2971 + 0 in total (QC-passed reads + QC-failed reads)
+2870 + 0 primary
+0 + 0 secondary
+101 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2367 + 0 mapped (79.67% : N/A)
+2266 + 0 primary mapped (78.95% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2367	0
+*	0	0	604
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2367	16569	100	244.861	29.3	59.2
+# STATS
+SN	raw total sequences:	2870	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2870
+SN	is sorted:	1
+SN	1st fragments:	2870
+SN	last fragments:	0
+SN	reads mapped:	2266
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	604
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	101
+SN	total length:	4787475	# ignores clipping
+SN	total first fragment length:	4787475	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4124046	# ignores clipping
+SN	bases mapped (cigar):	4083972	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	101710	# from NM fields
+SN	error rate:	2.490468e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1668
+SN	average first fragment length:	1668
+SN	average last fragment length:	0
+SN	maximum length:	30824
+SN	maximum first fragment length:	30824
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode89 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode89/barcode89_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+4605 + 0 in total (QC-passed reads + QC-failed reads)
+4202 + 0 primary
+0 + 0 secondary
+403 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+3719 + 0 mapped (80.76% : N/A)
+3316 + 0 primary mapped (78.91% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3719	0
+*	0	0	886
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3719	16569	100	370.535	28.9	58.9
+# STATS
+SN	raw total sequences:	4202	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4202
+SN	is sorted:	1
+SN	1st fragments:	4202
+SN	last fragments:	0
+SN	reads mapped:	3316
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	886
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	6	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	403
+SN	total length:	6764732	# ignores clipping
+SN	total first fragment length:	6764732	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6239358	# ignores clipping
+SN	bases mapped (cigar):	6182448	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	176912	# from NM fields
+SN	error rate:	2.861520e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1610
+SN	average first fragment length:	1610
+SN	average last fragment length:	0
+SN	maximum length:	7187
+SN	maximum first fragment length:	7187
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode90 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode90/barcode90_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+8090 + 0 in total (QC-passed reads + QC-failed reads)
+7897 + 0 primary
+0 + 0 secondary
+193 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+1449 + 0 mapped (17.91% : N/A)
+1256 + 0 primary mapped (15.90% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	1449	0
+*	0	0	6641
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1449	16569	100	152.12	29	59.1
+# STATS
+SN	raw total sequences:	7897	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	7897
+SN	is sorted:	1
+SN	1st fragments:	7897
+SN	last fragments:	0
+SN	reads mapped:	1256
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	6641
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	193
+SN	total length:	5772495	# ignores clipping
+SN	total first fragment length:	5772495	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	2556013	# ignores clipping
+SN	bases mapped (cigar):	2537912	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	68683	# from NM fields
+SN	error rate:	2.706280e-02	# mismatches / bases mapped (cigar)
+SN	average length:	731
+SN	average first fragment length:	731
+SN	average last fragment length:	0
+SN	maximum length:	36031
+SN	maximum first fragment length:	36031
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode91 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode91/barcode91_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+1059 + 0 in total (QC-passed reads + QC-failed reads)
+1024 + 0 primary
+0 + 0 secondary
+35 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+837 + 0 mapped (79.04% : N/A)
+802 + 0 primary mapped (78.32% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	837	0
+*	0	0	222
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	837	16569	100	84.5849	29.1	58.6
+# STATS
+SN	raw total sequences:	1024	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	1024
+SN	is sorted:	1
+SN	1st fragments:	1024
+SN	last fragments:	0
+SN	reads mapped:	802
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	222
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	35
+SN	total length:	1666075	# ignores clipping
+SN	total first fragment length:	1666075	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	1427538	# ignores clipping
+SN	bases mapped (cigar):	1411131	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	38205	# from NM fields
+SN	error rate:	2.707403e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1627
+SN	average first fragment length:	1627
+SN	average last fragment length:	0
+SN	maximum length:	24264
+SN	maximum first fragment length:	24264
+SN	maximum last fragment length:	0
+SN	average quality:	28.3
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode92 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode92/barcode92_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+5271 + 0 in total (QC-passed reads + QC-failed reads)
+5044 + 0 primary
+0 + 0 secondary
+227 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+5099 + 0 mapped (96.74% : N/A)
+4872 + 0 primary mapped (96.59% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5099	0
+*	0	0	172
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	5099	16569	100	548.1	29	59.1
+# STATS
+SN	raw total sequences:	5044	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5044
+SN	is sorted:	1
+SN	1st fragments:	5044
+SN	last fragments:	0
+SN	reads mapped:	4872
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	172
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	227
+SN	total length:	9325918	# ignores clipping
+SN	total first fragment length:	9325918	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9210313	# ignores clipping
+SN	bases mapped (cigar):	9143505	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	244120	# from NM fields
+SN	error rate:	2.669873e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1849
+SN	average first fragment length:	1849
+SN	average last fragment length:	0
+SN	maximum length:	7230
+SN	maximum first fragment length:	7230
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode93 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode93/barcode93_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+4366 + 0 in total (QC-passed reads + QC-failed reads)
+4117 + 0 primary
+0 + 0 secondary
+249 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+4078 + 0 mapped (93.40% : N/A)
+3829 + 0 primary mapped (93.00% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4078	0
+*	0	0	288
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4078	16569	100	396.974	28.9	59
+# STATS
+SN	raw total sequences:	4117	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4117
+SN	is sorted:	1
+SN	1st fragments:	4117
+SN	last fragments:	0
+SN	reads mapped:	3829
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	288
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	3	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	249
+SN	total length:	6903298	# ignores clipping
+SN	total first fragment length:	6903298	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6682631	# ignores clipping
+SN	bases mapped (cigar):	6622374	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	184092	# from NM fields
+SN	error rate:	2.779849e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1677
+SN	average first fragment length:	1677
+SN	average last fragment length:	0
+SN	maximum length:	35509
+SN	maximum first fragment length:	35509
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode94 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode94/barcode94_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+3679 + 0 in total (QC-passed reads + QC-failed reads)
+3412 + 0 primary
+0 + 0 secondary
+267 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+3376 + 0 mapped (91.76% : N/A)
+3109 + 0 primary mapped (91.12% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3376	0
+*	0	0	303
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3376	16569	100	334.071	29	59
+# STATS
+SN	raw total sequences:	3412	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	3412
+SN	is sorted:	1
+SN	1st fragments:	3412
+SN	last fragments:	0
+SN	reads mapped:	3109
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	303
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	267
+SN	total length:	5802777	# ignores clipping
+SN	total first fragment length:	5802777	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	5618071	# ignores clipping
+SN	bases mapped (cigar):	5573548	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	151470	# from NM fields
+SN	error rate:	2.717659e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1701
+SN	average first fragment length:	1701
+SN	average last fragment length:	0
+SN	maximum length:	10534
+SN	maximum first fragment length:	10534
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode95 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode95/barcode95_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+2861 + 0 in total (QC-passed reads + QC-failed reads)
+2746 + 0 primary
+0 + 0 secondary
+115 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2726 + 0 mapped (95.28% : N/A)
+2611 + 0 primary mapped (95.08% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2726	0
+*	0	0	135
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2726	16569	100	289.411	29.1	59.1
+# STATS
+SN	raw total sequences:	2746	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2746
+SN	is sorted:	1
+SN	1st fragments:	2746
+SN	last fragments:	0
+SN	reads mapped:	2611
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	135
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	115
+SN	total length:	4989607	# ignores clipping
+SN	total first fragment length:	4989607	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4864306	# ignores clipping
+SN	bases mapped (cigar):	4828768	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	128811	# from NM fields
+SN	error rate:	2.667575e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1817
+SN	average first fragment length:	1817
+SN	average last fragment length:	0
+SN	maximum length:	39998
+SN	maximum first fragment length:	39998
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode96 | TOOL: ngmlr
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/ngmlr/barcode96/barcode96_ngmlr.bam
+------------------------------------------------------------
+# FLAGSTAT
+2660 + 0 in total (QC-passed reads + QC-failed reads)
+2455 + 0 primary
+0 + 0 secondary
+205 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2349 + 0 mapped (88.31% : N/A)
+2144 + 0 primary mapped (87.33% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2349	0
+*	0	0	311
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2349	16569	100	243.271	29.1	59
+# STATS
+SN	raw total sequences:	2455	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2455
+SN	is sorted:	1
+SN	1st fragments:	2455
+SN	last fragments:	0
+SN	reads mapped:	2144
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	311
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	205
+SN	total length:	4309596	# ignores clipping
+SN	total first fragment length:	4309596	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4091992	# ignores clipping
+SN	bases mapped (cigar):	4058099	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	102705	# from NM fields
+SN	error rate:	2.530865e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1755
+SN	average first fragment length:	1755
+SN	average last fragment length:	0
+SN	maximum length:	7971
+SN	maximum first fragment length:	7971
+SN	maximum last fragment length:	0
+SN	average quality:	28.9
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode01 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode01/barcode01_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+599 + 0 in total (QC-passed reads + QC-failed reads)
+559 + 0 primary
+0 + 0 secondary
+40 + 0 supplementary
+21 + 0 duplicates
+21 + 0 primary duplicates
+441 + 0 mapped (73.62% : N/A)
+401 + 0 primary mapped (71.74% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	441	0
+*	0	0	158
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	420	16569	100	34.6461	29.2	59.8
+# STATS
+SN	raw total sequences:	559	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	559
+SN	is sorted:	1
+SN	1st fragments:	559
+SN	last fragments:	0
+SN	reads mapped:	401
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	158
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	21	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	40
+SN	total length:	690311	# ignores clipping
+SN	total first fragment length:	690311	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	591769	# ignores clipping
+SN	bases mapped (cigar):	589806	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	12523
+SN	mismatches:	15209	# from NM fields
+SN	error rate:	2.578644e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1235
+SN	average first fragment length:	1235
+SN	average last fragment length:	0
+SN	maximum length:	6627
+SN	maximum first fragment length:	6627
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode86 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode86/barcode86_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+5225 + 0 in total (QC-passed reads + QC-failed reads)
+4803 + 0 primary
+0 + 0 secondary
+422 + 0 supplementary
+823 + 0 duplicates
+823 + 0 primary duplicates
+4327 + 0 mapped (82.81% : N/A)
+3905 + 0 primary mapped (81.30% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4327	0
+*	0	0	898
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3504	16569	100	374.791	29.2	59.6
+# STATS
+SN	raw total sequences:	4803	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4803
+SN	is sorted:	1
+SN	1st fragments:	4803
+SN	last fragments:	0
+SN	reads mapped:	3905
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	898
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	823	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	422
+SN	total length:	7938001	# ignores clipping
+SN	total first fragment length:	7938001	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	7299597	# ignores clipping
+SN	bases mapped (cigar):	7279208	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1062818
+SN	mismatches:	198738	# from NM fields
+SN	error rate:	2.730215e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1653
+SN	average first fragment length:	1653
+SN	average last fragment length:	0
+SN	maximum length:	9304
+SN	maximum first fragment length:	9304
+SN	maximum last fragment length:	0
+SN	average quality:	29.1
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode87 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode87/barcode87_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+6002 + 0 in total (QC-passed reads + QC-failed reads)
+5579 + 0 primary
+0 + 0 secondary
+423 + 0 supplementary
+1376 + 0 duplicates
+1376 + 0 primary duplicates
+5876 + 0 mapped (97.90% : N/A)
+5453 + 0 primary mapped (97.74% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5876	0
+*	0	0	126
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4500	16569	100	462.854	28.8	59.7
+# STATS
+SN	raw total sequences:	5579	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5579
+SN	is sorted:	1
+SN	1st fragments:	5579
+SN	last fragments:	0
+SN	reads mapped:	5453
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	126
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	1376	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	423
+SN	total length:	9470828	# ignores clipping
+SN	total first fragment length:	9470828	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9391161	# ignores clipping
+SN	bases mapped (cigar):	9370359	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1693319
+SN	mismatches:	261953	# from NM fields
+SN	error rate:	2.795549e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1698
+SN	average first fragment length:	1698
+SN	average last fragment length:	0
+SN	maximum length:	11509
+SN	maximum first fragment length:	11509
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode88 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode88/barcode88_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+3076 + 0 in total (QC-passed reads + QC-failed reads)
+2870 + 0 primary
+0 + 0 secondary
+206 + 0 supplementary
+649 + 0 duplicates
+649 + 0 primary duplicates
+2513 + 0 mapped (81.70% : N/A)
+2307 + 0 primary mapped (80.38% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2513	0
+*	0	0	563
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1864	16569	100	201.249	29.1	59.6
+# STATS
+SN	raw total sequences:	2870	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2870
+SN	is sorted:	1
+SN	1st fragments:	2870
+SN	last fragments:	0
+SN	reads mapped:	2307
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	563
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	649	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	206
+SN	total length:	4787475	# ignores clipping
+SN	total first fragment length:	4787475	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4147956	# ignores clipping
+SN	bases mapped (cigar):	4131545	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	795073
+SN	mismatches:	105226	# from NM fields
+SN	error rate:	2.546892e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1668
+SN	average first fragment length:	1668
+SN	average last fragment length:	0
+SN	maximum length:	30824
+SN	maximum first fragment length:	30824
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode89 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode89/barcode89_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+4738 + 0 in total (QC-passed reads + QC-failed reads)
+4202 + 0 primary
+0 + 0 secondary
+536 + 0 supplementary
+515 + 0 duplicates
+515 + 0 primary duplicates
+3884 + 0 mapped (81.98% : N/A)
+3348 + 0 primary mapped (79.68% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3884	0
+*	0	0	854
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3369	16569	100	339.937	28.8	59.6
+# STATS
+SN	raw total sequences:	4202	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4202
+SN	is sorted:	1
+SN	1st fragments:	4202
+SN	last fragments:	0
+SN	reads mapped:	3348
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	854
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	515	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	536
+SN	total length:	6764732	# ignores clipping
+SN	total first fragment length:	6764732	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6260641	# ignores clipping
+SN	bases mapped (cigar):	6242329	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	633914
+SN	mismatches:	181409	# from NM fields
+SN	error rate:	2.906111e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1610
+SN	average first fragment length:	1610
+SN	average last fragment length:	0
+SN	maximum length:	7187
+SN	maximum first fragment length:	7187
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode90 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode90/barcode90_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+8119 + 0 in total (QC-passed reads + QC-failed reads)
+7897 + 0 primary
+0 + 0 secondary
+222 + 0 supplementary
+97 + 0 duplicates
+97 + 0 primary duplicates
+1489 + 0 mapped (18.34% : N/A)
+1267 + 0 primary mapped (16.04% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	1489	0
+*	0	0	6630
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1392	16569	100	147.587	29	59.8
+# STATS
+SN	raw total sequences:	7897	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	7897
+SN	is sorted:	1
+SN	1st fragments:	7897
+SN	last fragments:	0
+SN	reads mapped:	1267
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	6630
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	97	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	222
+SN	total length:	5772495	# ignores clipping
+SN	total first fragment length:	5772495	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	2561571	# ignores clipping
+SN	bases mapped (cigar):	2553074	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	102676
+SN	mismatches:	69773	# from NM fields
+SN	error rate:	2.732902e-02	# mismatches / bases mapped (cigar)
+SN	average length:	731
+SN	average first fragment length:	731
+SN	average last fragment length:	0
+SN	maximum length:	36031
+SN	maximum first fragment length:	36031
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode91 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode91/barcode91_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+1098 + 0 in total (QC-passed reads + QC-failed reads)
+1024 + 0 primary
+0 + 0 secondary
+74 + 0 supplementary
+86 + 0 duplicates
+86 + 0 primary duplicates
+890 + 0 mapped (81.06% : N/A)
+816 + 0 primary mapped (79.69% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	890	0
+*	0	0	208
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	804	16569	100	79.6774	29	59.6
+# STATS
+SN	raw total sequences:	1024	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	1024
+SN	is sorted:	1
+SN	1st fragments:	1024
+SN	last fragments:	0
+SN	reads mapped:	816
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	208
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	86	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	74
+SN	total length:	1666075	# ignores clipping
+SN	total first fragment length:	1666075	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	1436943	# ignores clipping
+SN	bases mapped (cigar):	1431143	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	107299
+SN	mismatches:	39806	# from NM fields
+SN	error rate:	2.781413e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1627
+SN	average first fragment length:	1627
+SN	average last fragment length:	0
+SN	maximum length:	24264
+SN	maximum first fragment length:	24264
+SN	maximum last fragment length:	0
+SN	average quality:	28.3
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode92 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode92/barcode92_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+5379 + 0 in total (QC-passed reads + QC-failed reads)
+5044 + 0 primary
+0 + 0 secondary
+335 + 0 supplementary
+1327 + 0 duplicates
+1327 + 0 primary duplicates
+5244 + 0 mapped (97.49% : N/A)
+4909 + 0 primary mapped (97.32% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5244	0
+*	0	0	135
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3917	16569	100	439.917	28.9	59.8
+# STATS
+SN	raw total sequences:	5044	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5044
+SN	is sorted:	1
+SN	1st fragments:	5044
+SN	last fragments:	0
+SN	reads mapped:	4909
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	135
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	1327	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	335
+SN	total length:	9325918	# ignores clipping
+SN	total first fragment length:	9325918	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9235449	# ignores clipping
+SN	bases mapped (cigar):	9213219	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1910818
+SN	mismatches:	250569	# from NM fields
+SN	error rate:	2.719668e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1849
+SN	average first fragment length:	1849
+SN	average last fragment length:	0
+SN	maximum length:	7230
+SN	maximum first fragment length:	7230
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode93 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode93/barcode93_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+4481 + 0 in total (QC-passed reads + QC-failed reads)
+4117 + 0 primary
+0 + 0 secondary
+364 + 0 supplementary
+1034 + 0 duplicates
+1034 + 0 primary duplicates
+4234 + 0 mapped (94.49% : N/A)
+3870 + 0 primary mapped (94.00% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4234	0
+*	0	0	247
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3200	16569	100	325.619	28.8	59.7
+# STATS
+SN	raw total sequences:	4117	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4117
+SN	is sorted:	1
+SN	1st fragments:	4117
+SN	last fragments:	0
+SN	reads mapped:	3870
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	247
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	1034	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	364
+SN	total length:	6903298	# ignores clipping
+SN	total first fragment length:	6903298	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6703305	# ignores clipping
+SN	bases mapped (cigar):	6682565	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1287120
+SN	mismatches:	188641	# from NM fields
+SN	error rate:	2.822883e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1677
+SN	average first fragment length:	1677
+SN	average last fragment length:	0
+SN	maximum length:	35509
+SN	maximum first fragment length:	35509
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode94 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode94/barcode94_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+3774 + 0 in total (QC-passed reads + QC-failed reads)
+3412 + 0 primary
+0 + 0 secondary
+362 + 0 supplementary
+532 + 0 duplicates
+532 + 0 primary duplicates
+3494 + 0 mapped (92.58% : N/A)
+3132 + 0 primary mapped (91.79% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3494	0
+*	0	0	280
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2962	16569	100	298.709	29	59.8
+# STATS
+SN	raw total sequences:	3412	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	3412
+SN	is sorted:	1
+SN	1st fragments:	3412
+SN	last fragments:	0
+SN	reads mapped:	3132
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	280
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	532	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	362
+SN	total length:	5802777	# ignores clipping
+SN	total first fragment length:	5802777	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	5628565	# ignores clipping
+SN	bases mapped (cigar):	5617773	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	656551
+SN	mismatches:	155362	# from NM fields
+SN	error rate:	2.765544e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1701
+SN	average first fragment length:	1701
+SN	average last fragment length:	0
+SN	maximum length:	10534
+SN	maximum first fragment length:	10534
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode95 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode95/barcode95_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+2932 + 0 in total (QC-passed reads + QC-failed reads)
+2746 + 0 primary
+0 + 0 secondary
+186 + 0 supplementary
+432 + 0 duplicates
+432 + 0 primary duplicates
+2817 + 0 mapped (96.08% : N/A)
+2631 + 0 primary mapped (95.81% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2817	0
+*	0	0	115
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2385	16569	100	259.664	29.1	59.7
+# STATS
+SN	raw total sequences:	2746	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2746
+SN	is sorted:	1
+SN	1st fragments:	2746
+SN	last fragments:	0
+SN	reads mapped:	2631
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	115
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	432	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	186
+SN	total length:	4989607	# ignores clipping
+SN	total first fragment length:	4989607	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4882246	# ignores clipping
+SN	bases mapped (cigar):	4871065	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	552715
+SN	mismatches:	131987	# from NM fields
+SN	error rate:	2.709613e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1817
+SN	average first fragment length:	1817
+SN	average last fragment length:	0
+SN	maximum length:	39998
+SN	maximum first fragment length:	39998
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode96 | TOOL: minimap2_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/minimap2/barcode96/barcode96_minimap2_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+2729 + 0 in total (QC-passed reads + QC-failed reads)
+2455 + 0 primary
+0 + 0 secondary
+274 + 0 supplementary
+254 + 0 duplicates
+254 + 0 primary duplicates
+2439 + 0 mapped (89.37% : N/A)
+2165 + 0 primary mapped (88.19% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2439	0
+*	0	0	290
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2185	16569	100	229.293	29	59.7
+# STATS
+SN	raw total sequences:	2455	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2455
+SN	is sorted:	1
+SN	1st fragments:	2455
+SN	last fragments:	0
+SN	reads mapped:	2165
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	290
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	254	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	274
+SN	total length:	4309596	# ignores clipping
+SN	total first fragment length:	4309596	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4104072	# ignores clipping
+SN	bases mapped (cigar):	4091136	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	286268
+SN	mismatches:	105129	# from NM fields
+SN	error rate:	2.569677e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1755
+SN	average first fragment length:	1755
+SN	average last fragment length:	0
+SN	maximum length:	7971
+SN	maximum first fragment length:	7971
+SN	maximum last fragment length:	0
+SN	average quality:	28.9
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode01 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode01/barcode01_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+590 + 0 in total (QC-passed reads + QC-failed reads)
+559 + 0 primary
+0 + 0 secondary
+31 + 0 supplementary
+9 + 0 duplicates
+9 + 0 primary duplicates
+430 + 0 mapped (72.88% : N/A)
+399 + 0 primary mapped (71.38% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	430	0
+*	0	0	160
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	421	16568	99.994	34.6081	29.3	59
+# STATS
+SN	raw total sequences:	559	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	559
+SN	is sorted:	1
+SN	1st fragments:	559
+SN	last fragments:	0
+SN	reads mapped:	399
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	160
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	9	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	31
+SN	total length:	690311	# ignores clipping
+SN	total first fragment length:	690311	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	590198	# ignores clipping
+SN	bases mapped (cigar):	585279	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	8029
+SN	mismatches:	14975	# from NM fields
+SN	error rate:	2.558609e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1235
+SN	average first fragment length:	1235
+SN	average last fragment length:	0
+SN	maximum length:	6627
+SN	maximum first fragment length:	6627
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode86 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode86/barcode86_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+5076 + 0 in total (QC-passed reads + QC-failed reads)
+4803 + 0 primary
+0 + 0 secondary
+273 + 0 supplementary
+554 + 0 duplicates
+554 + 0 primary duplicates
+4145 + 0 mapped (81.66% : N/A)
+3872 + 0 primary mapped (80.62% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4145	0
+*	0	0	931
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3591	16569	100	393.137	29.2	58.7
+# STATS
+SN	raw total sequences:	4803	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4803
+SN	is sorted:	1
+SN	1st fragments:	4803
+SN	last fragments:	0
+SN	reads mapped:	3872
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	931
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	554	# PCR or optical duplicate bit set
+SN	reads MQ0:	4	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	273
+SN	total length:	7938001	# ignores clipping
+SN	total first fragment length:	7938001	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	7278595	# ignores clipping
+SN	bases mapped (cigar):	7215099	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	677177
+SN	mismatches:	190000	# from NM fields
+SN	error rate:	2.633367e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1653
+SN	average first fragment length:	1653
+SN	average last fragment length:	0
+SN	maximum length:	9304
+SN	maximum first fragment length:	9304
+SN	maximum last fragment length:	0
+SN	average quality:	29.1
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode87 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode87/barcode87_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+5894 + 0 in total (QC-passed reads + QC-failed reads)
+5579 + 0 primary
+0 + 0 secondary
+315 + 0 supplementary
+975 + 0 duplicates
+975 + 0 primary duplicates
+5721 + 0 mapped (97.06% : N/A)
+5406 + 0 primary mapped (96.90% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5721	0
+*	0	0	173
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4746	16569	100	490.413	28.9	59
+# STATS
+SN	raw total sequences:	5579	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5579
+SN	is sorted:	1
+SN	1st fragments:	5579
+SN	last fragments:	0
+SN	reads mapped:	5406
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	173
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	975	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	315
+SN	total length:	9470828	# ignores clipping
+SN	total first fragment length:	9470828	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9366662	# ignores clipping
+SN	bases mapped (cigar):	9300218	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1148987
+SN	mismatches:	254711	# from NM fields
+SN	error rate:	2.738764e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1698
+SN	average first fragment length:	1698
+SN	average last fragment length:	0
+SN	maximum length:	11509
+SN	maximum first fragment length:	11509
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode88 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode88/barcode88_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+2971 + 0 in total (QC-passed reads + QC-failed reads)
+2870 + 0 primary
+0 + 0 secondary
+101 + 0 supplementary
+492 + 0 duplicates
+492 + 0 primary duplicates
+2367 + 0 mapped (79.67% : N/A)
+2266 + 0 primary mapped (78.95% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2367	0
+*	0	0	604
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1875	16569	100	210.253	29.3	59.1
+# STATS
+SN	raw total sequences:	2870	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2870
+SN	is sorted:	1
+SN	1st fragments:	2870
+SN	last fragments:	0
+SN	reads mapped:	2266
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	604
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	492	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	101
+SN	total length:	4787475	# ignores clipping
+SN	total first fragment length:	4787475	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4124046	# ignores clipping
+SN	bases mapped (cigar):	4083972	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	590612
+SN	mismatches:	101710	# from NM fields
+SN	error rate:	2.490468e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1668
+SN	average first fragment length:	1668
+SN	average last fragment length:	0
+SN	maximum length:	30824
+SN	maximum first fragment length:	30824
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode89 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode89/barcode89_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+4605 + 0 in total (QC-passed reads + QC-failed reads)
+4202 + 0 primary
+0 + 0 secondary
+403 + 0 supplementary
+364 + 0 duplicates
+364 + 0 primary duplicates
+3719 + 0 mapped (80.76% : N/A)
+3316 + 0 primary mapped (78.91% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3719	0
+*	0	0	886
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3355	16569	100	346.128	28.9	58.9
+# STATS
+SN	raw total sequences:	4202	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4202
+SN	is sorted:	1
+SN	1st fragments:	4202
+SN	last fragments:	0
+SN	reads mapped:	3316
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	886
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	364	# PCR or optical duplicate bit set
+SN	reads MQ0:	6	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	403
+SN	total length:	6764732	# ignores clipping
+SN	total first fragment length:	6764732	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6239358	# ignores clipping
+SN	bases mapped (cigar):	6182448	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	450940
+SN	mismatches:	176912	# from NM fields
+SN	error rate:	2.861520e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1610
+SN	average first fragment length:	1610
+SN	average last fragment length:	0
+SN	maximum length:	7187
+SN	maximum first fragment length:	7187
+SN	maximum last fragment length:	0
+SN	average quality:	28.7
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode90 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode90/barcode90_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+8090 + 0 in total (QC-passed reads + QC-failed reads)
+7897 + 0 primary
+0 + 0 secondary
+193 + 0 supplementary
+66 + 0 duplicates
+66 + 0 primary duplicates
+1449 + 0 mapped (17.91% : N/A)
+1256 + 0 primary mapped (15.90% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	1449	0
+*	0	0	6641
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	1383	16569	100	148.874	29	59
+# STATS
+SN	raw total sequences:	7897	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	7897
+SN	is sorted:	1
+SN	1st fragments:	7897
+SN	last fragments:	0
+SN	reads mapped:	1256
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	6641
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	66	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	193
+SN	total length:	5772495	# ignores clipping
+SN	total first fragment length:	5772495	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	2556013	# ignores clipping
+SN	bases mapped (cigar):	2537912	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	60755
+SN	mismatches:	68683	# from NM fields
+SN	error rate:	2.706280e-02	# mismatches / bases mapped (cigar)
+SN	average length:	731
+SN	average first fragment length:	731
+SN	average last fragment length:	0
+SN	maximum length:	36031
+SN	maximum first fragment length:	36031
+SN	maximum last fragment length:	0
+SN	average quality:	29.2
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode91 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode91/barcode91_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+1059 + 0 in total (QC-passed reads + QC-failed reads)
+1024 + 0 primary
+0 + 0 secondary
+35 + 0 supplementary
+53 + 0 duplicates
+53 + 0 primary duplicates
+837 + 0 mapped (79.04% : N/A)
+802 + 0 primary mapped (78.32% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	837	0
+*	0	0	222
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	784	16569	100	81.4109	29.1	58.5
+# STATS
+SN	raw total sequences:	1024	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	1024
+SN	is sorted:	1
+SN	1st fragments:	1024
+SN	last fragments:	0
+SN	reads mapped:	802
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	222
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	53	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	35
+SN	total length:	1666075	# ignores clipping
+SN	total first fragment length:	1666075	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	1427538	# ignores clipping
+SN	bases mapped (cigar):	1411131	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	55709
+SN	mismatches:	38205	# from NM fields
+SN	error rate:	2.707403e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1627
+SN	average first fragment length:	1627
+SN	average last fragment length:	0
+SN	maximum length:	24264
+SN	maximum first fragment length:	24264
+SN	maximum last fragment length:	0
+SN	average quality:	28.3
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode92 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode92/barcode92_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+5271 + 0 in total (QC-passed reads + QC-failed reads)
+5044 + 0 primary
+0 + 0 secondary
+227 + 0 supplementary
+923 + 0 duplicates
+923 + 0 primary duplicates
+5099 + 0 mapped (96.74% : N/A)
+4872 + 0 primary mapped (96.59% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	5099	0
+*	0	0	172
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	4176	16569	100	470.693	29	59
+# STATS
+SN	raw total sequences:	5044	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	5044
+SN	is sorted:	1
+SN	1st fragments:	5044
+SN	last fragments:	0
+SN	reads mapped:	4872
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	172
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	923	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	227
+SN	total length:	9325918	# ignores clipping
+SN	total first fragment length:	9325918	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	9210313	# ignores clipping
+SN	bases mapped (cigar):	9143505	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	1322539
+SN	mismatches:	244120	# from NM fields
+SN	error rate:	2.669873e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1849
+SN	average first fragment length:	1849
+SN	average last fragment length:	0
+SN	maximum length:	7230
+SN	maximum first fragment length:	7230
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode93 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode93/barcode93_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+4366 + 0 in total (QC-passed reads + QC-failed reads)
+4117 + 0 primary
+0 + 0 secondary
+249 + 0 supplementary
+719 + 0 duplicates
+719 + 0 primary duplicates
+4078 + 0 mapped (93.40% : N/A)
+3829 + 0 primary mapped (93.00% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	4078	0
+*	0	0	288
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3359	16569	100	345.96	28.9	58.9
+# STATS
+SN	raw total sequences:	4117	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	4117
+SN	is sorted:	1
+SN	1st fragments:	4117
+SN	last fragments:	0
+SN	reads mapped:	3829
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	288
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	719	# PCR or optical duplicate bit set
+SN	reads MQ0:	3	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	249
+SN	total length:	6903298	# ignores clipping
+SN	total first fragment length:	6903298	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	6682631	# ignores clipping
+SN	bases mapped (cigar):	6622374	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	880700
+SN	mismatches:	184092	# from NM fields
+SN	error rate:	2.779849e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1677
+SN	average first fragment length:	1677
+SN	average last fragment length:	0
+SN	maximum length:	35509
+SN	maximum first fragment length:	35509
+SN	maximum last fragment length:	0
+SN	average quality:	28.6
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode94 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode94/barcode94_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+3679 + 0 in total (QC-passed reads + QC-failed reads)
+3412 + 0 primary
+0 + 0 secondary
+267 + 0 supplementary
+366 + 0 duplicates
+366 + 0 primary duplicates
+3376 + 0 mapped (91.76% : N/A)
+3109 + 0 primary mapped (91.12% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	3376	0
+*	0	0	303
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	3010	16569	100	306.694	29	58.9
+# STATS
+SN	raw total sequences:	3412	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	3412
+SN	is sorted:	1
+SN	1st fragments:	3412
+SN	last fragments:	0
+SN	reads mapped:	3109
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	303
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	366	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	267
+SN	total length:	5802777	# ignores clipping
+SN	total first fragment length:	5802777	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	5618071	# ignores clipping
+SN	bases mapped (cigar):	5573548	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	476651
+SN	mismatches:	151470	# from NM fields
+SN	error rate:	2.717659e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1701
+SN	average first fragment length:	1701
+SN	average last fragment length:	0
+SN	maximum length:	10534
+SN	maximum first fragment length:	10534
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode95 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode95/barcode95_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+2861 + 0 in total (QC-passed reads + QC-failed reads)
+2746 + 0 primary
+0 + 0 secondary
+115 + 0 supplementary
+286 + 0 duplicates
+286 + 0 primary duplicates
+2726 + 0 mapped (95.28% : N/A)
+2611 + 0 primary mapped (95.08% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2726	0
+*	0	0	135
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2440	16569	100	267.188	29.2	59.1
+# STATS
+SN	raw total sequences:	2746	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2746
+SN	is sorted:	1
+SN	1st fragments:	2746
+SN	last fragments:	0
+SN	reads mapped:	2611
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	135
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	286	# PCR or optical duplicate bit set
+SN	reads MQ0:	2	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	115
+SN	total length:	4989607	# ignores clipping
+SN	total first fragment length:	4989607	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4864306	# ignores clipping
+SN	bases mapped (cigar):	4828768	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	381029
+SN	mismatches:	128811	# from NM fields
+SN	error rate:	2.667575e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1817
+SN	average first fragment length:	1817
+SN	average last fragment length:	0
+SN	maximum length:	39998
+SN	maximum first fragment length:	39998
+SN	maximum last fragment length:	0
+SN	average quality:	28.8
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
+------------------------------------------------------------
+SAMPLE: barcode96 | TOOL: ngmlr_markdup
+BAM: /home/pablo/pipeline_ONT_v1/Data/Processed/03.Alignment/markdup/ngmlr/barcode96/barcode96_ngmlr_markdup.bam
+------------------------------------------------------------
+# FLAGSTAT
+2660 + 0 in total (QC-passed reads + QC-failed reads)
+2455 + 0 primary
+0 + 0 secondary
+205 + 0 supplementary
+170 + 0 duplicates
+170 + 0 primary duplicates
+2349 + 0 mapped (88.31% : N/A)
+2144 + 0 primary mapped (87.33% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+# IDXSTATS
+NC_012920.1	16569	2349	0
+*	0	0	311
+# COVERAGE
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+NC_012920.1	1	16569	2179	16569	100	232.452	29.1	59
+# STATS
+SN	raw total sequences:	2455	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	2455
+SN	is sorted:	1
+SN	1st fragments:	2455
+SN	last fragments:	0
+SN	reads mapped:	2144
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	311
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	170	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	205
+SN	total length:	4309596	# ignores clipping
+SN	total first fragment length:	4309596	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	4091992	# ignores clipping
+SN	bases mapped (cigar):	4058099	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	192879
+SN	mismatches:	102705	# from NM fields
+SN	error rate:	2.530865e-02	# mismatches / bases mapped (cigar)
+SN	average length:	1755
+SN	average first fragment length:	1755
+SN	average last fragment length:	0
+SN	maximum length:	7971
+SN	maximum first fragment length:	7971
+SN	maximum last fragment length:	0
+SN	average quality:	28.9
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0

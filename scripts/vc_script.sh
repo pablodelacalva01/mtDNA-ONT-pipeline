@@ -8,8 +8,7 @@
 # Descripcion: Pipeline para analisis de variantes mitocondriales a partir
 #              de lecturas largas Nanopore
 #              Parte 3: Variant calling de variantes mitocondrial (ONT)
-# Entorno conda:
-#   - ont_vc: clair3, mutverse2, bcftools, samtools
+# Entorno conda: ont_vc
 # Callers:
 #   - Clair3 → SNVs + indels (modelo r1041_e82_400bps_sup_v500)
 #   - Mutserve2 → heteroplasmias mitocondriales
@@ -32,42 +31,39 @@
 set -euo pipefail
 
 #0. CONFIGURACION DE ENTORNO
-# Activacion del entorno de Conda 
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate ont_vc
-
 
 # Variables de entorno
-TFM_DIR="/home/pdelacalvac/TFM"
-INPUT_MARKDUP="${TFM_DIR}/Data/Processed/03.Alignment/markdup"
-OUTPUT="${TFM_DIR}/Data/Processed/04.Variants"
-RESULTS="${TFM_DIR}/Results"
-REF="${TFM_DIR}/Data/Reference_Genome/mtDNA.fasta"
-LOG_DIR="${TFM_DIR}/Data/Processed/logs"
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
+
+INPUT_MARKDUP="${PROJECT_DIR}/Data/Processed/03.Alignment/markdup"
+OUTPUT="${PROJECT_DIR}/Data/Processed/04.Variants"
+RESULTS="${PROJECT_DIR}/Results"
+REF="${PROJECT_DIR}/Data/Reference_Genome/mtDNA.fasta"
+LOG_DIR="${PROJECT_DIR}/Data/Processed/logs"
+TIMESTAMP=$(date +"%Y_%m_%d_%H:%M:%S")
 THREADS=4
 
 
 # Requisitios para el VC (CLAIR3 + MUTSERVE)
-CLAIR3_BIN="/home/pdelacalvac/miniconda3/envs/ont_vc/bin" #(modificar ruta absoluta segun usuario)
+CLAIR3_BIN="${CONDA_PREFIX}/bin" 
 export PATH="${CLAIR3_BIN}:${PATH}"
+MUTSERVE_BIN="${OUTPUT}/mutserve2_model/mutserve"
 #Forzar Java del entorno conda (openjdk=17) 
-export JAVA_HOME=$CONDA_PREFIX
-export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME="${CONDA_PREFIX}"
+export PATH="$JAVA_HOME/bin:$PATH"
 
-# Modelo Clair3 — directorio que contiene pileup.pt y full_alignment.pt
-CLAIR3_MODEL="${TFM_DIR}/Data/Processed/clair3_models/"
+# Modelo y variables de Clair3
+CLAIR3_MODEL="${OUTPUT}/clair3_models"
+CLAIR3_PLATFORM=ont
+CLAIR3_MIN_SNP_AF=0.05
+CLAIR3_MIN_INDEL_AF=0.05
 
-# Parametros Clair3
-CLAIR3_PLATFORM="ont"
-CLAIR3_MIN_SNP_AF="0.01"      # AF minimo para SNVs (variable)
-CLAIR3_MIN_INDEL_AF="0.05"    # AF minimo para indels (variable)
- 
-# Parametros Mutserve2
-MUTSERVE_MIN_HET="0.01"       # Frecuencia minima de heteroplasmia (variable)
-MUTSERVE_MAPQ="20"            # MAPQ minimo de reads (variable)
-MUTSERVE_BASEQ="15"           # Base quality minima (variable)
- 
+# Variables de Mutserve2
+MUTSERVE_MIN_HET=0.05
+MUTSERVE_MAPQ=20
+MUTSERVE_BASEQ=12 
+
 # Contig del mtDNA en la referencia (rCRS)
 CONTIG="NC_012920.1"
 
@@ -81,6 +77,9 @@ mkdir -p "${OUTPUT}/clair3/minimap2" "${OUTPUT}/clair3/ngmlr" \
  
 LOGFILE="${LOG_DIR}/pipeline_vc_${TIMESTAMP}.log"
 exec > >(tee -a "${LOGFILE}") 2>&1
+
+#INSTALACIÓN DE DEPENDENCIAS EXTRAS DEL ENV DE CONDA (Vease: ont_vc.yml)
+
 
 # FUNCIONES AUXILIARES 
 #0.1. FX1: Indexar vcf.gz (forzado para evitar indices antiguos y/o corruptos)
@@ -184,11 +183,11 @@ for ALIGNER in "${ALIGNERS[@]}"; do
         #   --model_path:        Directorio con pileup.pt y full_alignment.pt
         #   --ctg_name:          Limitar al contig mtDNA
         #   --include_all_ctgs:  Desactivado (solo 1 contig especifico)
-        #   --snp_min_af:        AF minimo para SNVs (0.01 = 1%, variable)
+        #   --snp_min_af:        AF minimo para SNVs (0.05 = 5%, variable)
         #   --indel_min_af:      AF minimo para indels (variable)
         #   --enable_long_indel: Mejora deteccion de indels largos
         #   --no_phasing_for_fa: Desactiva phasing 
-        #   --haploid_precise:   Modo "haploide"
+        #   --haploid_sensitive: Considerar variantes 0/1 y 1/1
 
         "${CLAIR3_BIN}/run_clair3.sh" \
             --ref_fn="${REF}" --bam_fn="${BAM}" --output="${CLAIR3_OUT}" \
@@ -199,7 +198,7 @@ for ALIGNER in "${ALIGNERS[@]}"; do
             --snp_min_af="${CLAIR3_MIN_SNP_AF}" --indel_min_af="${CLAIR3_MIN_INDEL_AF}" \
             --enable_long_indel \
             --no_phasing_for_fa \
-            --haploid_precise \
+            --haploid_sensitive \
             > "${LOG_DIR}/${SAMPLE}_${ALIGNER}_clair3.log" 2>&1
  
         # El VCF final de Clair3: merge_output.vcf.gz
@@ -249,13 +248,13 @@ for ALIGNER in "${ALIGNERS[@]}"; do
         #   --mapQ:             MAPQ minimo de reads (variable)
         #   --baseQ:            Base quality minima (variable)
         #Nota: El BAM de entrada o input no se declara explicitamente 
-        mutserve2 call "${BAM}" \
+        "${MUTSERVE_BIN}" call "${BAM}" \
             --output="${MUTSERVE_OUT}/${SAMPLE}_${ALIGNER}.vcf" --reference="${REF}" \
             --threads="${THREADS}" \
             --level="${MUTSERVE_MIN_HET}" --mapQ="${MUTSERVE_MAPQ}" --baseQ="${MUTSERVE_BASEQ}" \
             > "${LOG_DIR}/${SAMPLE}_${ALIGNER}_mutserve2.log" 2>&1
  
-        # Mutserve2 genera el VCF
+        # Mutserve2 genera el VCFcd mutse
         RAW_VCF="${MUTSERVE_OUT}/${SAMPLE}_${ALIGNER}.vcf"
         if [[ ! -f "${RAW_VCF}" ]]; then
             echo "ERROR: Mutserve2 no generó VCF para ${SAMPLE} (${ALIGNER})" >&2

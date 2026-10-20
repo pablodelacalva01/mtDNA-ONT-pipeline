@@ -1,2 +1,0 @@
-"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
-"SAMPLE"	"H1z"	"1"	"0.8232"	"1-16569"	"8860G"	"263G 327T 750G 1438G 3010A 4769G 11428T 15326G 16189C"	"6620C (localPrivateMutation) 15077A (localPrivateMutation) 16178C (localPrivateMutation) 16519C (hotspot)"	"15077A [E111K| Codon 1 | CYTB ]"	"263G 327T 750G 1438G 3010A 4769G 6620C 11428T 15077A 15326G 16178C 16189C 16519C"

@@ -1,0 +1,78 @@
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# TSV ANOTADO - mtDNA ONT | Muestra: barcode92
+# Generado: Tue Oct 13 17:27:35 CEST 2026
+# Referencia: NC_012920.1 (rCRS)
+#
+# VERSIONES DE BASES DE DATOS:
+# Base_de_datos             Version         Fuente                                                  Fecha_descarga
+#
+# LEYENDA DE COLUMNAS:
+# CHROM        : Contig de referencia (NC_012920.1)
+# POS          : Posicion en la referencia (rCRS)
+# REF / ALT    : Alelo de referencia / alternativo (una fila por alelo ALT)
+# AF_ALT       : Fraccion alelica del ALT (heteroplasmia): media de AF_MINIMAP2 y AF_NGMLR
+# COVERAGE     : Profundidad total en la posicion: media de DP_MINIMAP2 y DP_NGMLR
+# AD           : Lecturas ref,alt: media de ambos alineadores, redondeada
+# GENE         : Gen del efecto SnpEff seleccionado (mayor impacto; upstream/downstream penalizados)
+# EFFECT       : Efecto funcional predicho (SnpEff)
+# IMPACT       : HIGH / MODERATE / LOW / MODIFIER
+# HGVS_C       : HGVS a nivel de ADN codificante (c./n.) segun SnpEff
+# HGVS_P       : HGVS a nivel de proteina (p.); '.' si no aplica
+# CLINVAR_ID   : ClinVar Allele ID (INFO/ALLELEID)
+# CLNSIG       : Clasificacion clinica ClinVar
+# CLNDN        : Enfermedad asociada en ClinVar
+# AF_hom       : Frecuencia de homoplasmia en gnomAD v3.1
+# AF_het       : Frecuencia de heteroplasmia en gnomAD v3.1
+# AC_hom       : Individuos homoplasmaticos en gnomAD v3.1
+# AC_het       : Individuos heteroplasmaticos en gnomAD v3.1
+# VAR_TYPE     : SNV / INDEL / OTRO (multialelico o simbolico)
+# N_SUPPORT    : Numero de combinaciones (0-4) que detectan la variante
+# CALLED_BY    : Combinaciones que la detectan: MC=minimap2+Clair3, MM=minimap2+Mutserve2, NC=ngmlr+Clair3, NM=ngmlr+Mutserve2
+# CROSS_CALLER : SI si la detectan Clair3 y Mutserve2 (con cualquier alineador), NO en caso contrario
+# AF_MINIMAP2 / DP_MINIMAP2 / AD_MINIMAP2 : fraccion alelica, profundidad y lecturas ref,alt en el BAM de minimap2
+# AF_NGMLR    / DP_NGMLR    / AD_NGMLR    : idem en el BAM de ngmlr
+# AF_SOURCE    : pileup = bcftools mpileup (MAPQ>=20, BASEQ>=12, SNVs) | Clair3 = FORMAT/AD de MC y NC (indels) | . = no disponible
+CHROM	POS	REF	ALT	AF_ALT	COVERAGE	AD	GENE	EFFECT	IMPACT	HGVS_C	HGVS_P	CLINVAR_ID	CLNSIG	CLNDN	AF_hom	AF_het	AC_hom	AC_het	VAR_TYPE	N_SUPPORT	CALLED_BY	CROSS_CALLER	AF_MINIMAP2	DP_MINIMAP2	AD_MINIMAP2	AF_NGMLR	DP_NGMLR	AD_NGMLR	AF_SOURCE
+NC_012920.1	64	C	T	1.0000	114	0,114	MT-TF	upstream_gene_variant	MODIFIER	n.-513C>T	.	.	.	.	0.041227	0.00129891	2317	73	SNV	4	MC+MM+NC+NM	SI	1	117	0,117	1	112	0,112	pileup
+NC_012920.1	73	A	G	1.0000	171	0,171	MT-TF	upstream_gene_variant	MODIFIER	n.-504A>G	.	.	.	.	0.715743	0.00010683	40199	6	SNV	4	MC+MM+NC+NM	SI	1	175	0,175	1	167	0,167	pileup
+NC_012920.1	146	T	C	0.9965	140	0,140	MT-TF	upstream_gene_variant	MODIFIER	n.-431T>C	.	.	.	.	0.203686	0.00388507	11272	215	SNV	4	MC+MM+NC+NM	SI	1	138	0,138	0.993	143	1,142	pileup
+NC_012920.1	153	A	G	0.9778	180	1,176	MT-TF	upstream_gene_variant	MODIFIER	n.-424A>G	.	.	.	.	0.0553615	0.000514084	3123	29	SNV	4	MC+MM+NC+NM	SI	0.978	182	1,178	0.9777	179	1,175	pileup
+NC_012920.1	235	A	G	0.9940	166	1,166	MT-TF	upstream_gene_variant	MODIFIER	n.-342A>G	.	.	.	.	0.0489972	0.0001596	2763	9	SNV	4	MC+MM+NC+NM	SI	0.9939	165	1,164	0.994	168	1,167	pileup
+NC_012920.1	263	A	G	0.9852	169	2,166	MT-TF	upstream_gene_variant	MODIFIER	n.-314A>G	.	.	.	.	0.990695	0.000194966	55895	11	SNV	4	MC+MM+NC+NM	SI	0.9825	171	3,168	0.988	167	2,165	pileup
+NC_012920.1	302	A	AC	0.5426	94	24,51	MT-TF	upstream_gene_variant	MODIFIER	n.-275_-274insC	.	.	.	.	0.000578741	0.840718	9	13074	INDEL	1	NC	NO	.	.	.	0.5426	94	24,51	Clair3
+NC_012920.1	310	T	TC	0.5789	95	12,55	MT-TF	upstream_gene_variant	MODIFIER	n.-267_-266insC	.	.	.	.	0.625506	0.360195	32632	18791	INDEL	2	MC+NC	NO	0.5789	95	12,55	0.5789	95	12,55	Clair3
+NC_012920.1	312	C	T	0.0763	184	170,14	MT-TF	upstream_gene_variant	MODIFIER	n.-265C>T	.	.	.	.	.	.	.	.	SNV	2	MM+NM	NO	0.0761	184	170,14	0.0765	183	169,14	pileup
+NC_012920.1	513	GCA	G	0.8964	111	3,100	MT-TF	upstream_gene_variant	MODIFIER	n.-63_-62delCA	.	.	.	.	0.266249	0.00236049	14776	131	INDEL	2	MC+NC	NO	0.9009	111	4,100	0.8919	111	2,99	Clair3
+NC_012920.1	620	T	C	0.0425	140	133,6	MT-RNR1	upstream_gene_variant	MODIFIER	n.-28T>C	.	.	.	.	0	0	0	0	SNV	1	NM	NO	0.0365	137	130,5	0.0486	144	136,7	pileup
+NC_012920.1	663	A	G	1.0000	174	0,174	MT-TV	upstream_gene_variant	MODIFIER	n.-939A>G	.	.	.	.	0.0475186	7.08968e-05	2681	4	SNV	4	MC+MM+NC+NM	SI	1	172	0,172	1	177	0,177	pileup
+NC_012920.1	750	A	G	0.9975	198	0,198	MT-TV	upstream_gene_variant	MODIFIER	n.-852A>G	.	.	.	.	0.983408	0.00010647	55419	6	SNV	4	MC+MM+NC+NM	SI	1	198	0,198	0.995	199	1,198	pileup
+NC_012920.1	951	G	C	0.0645	118	108,8	MT-TV	upstream_gene_variant	MODIFIER	n.-651G>C	.	.	.	.	.	.	.	.	SNV	1	MM	NO	0.0877	114	103,10	0.0413	121	114,5	pileup
+NC_012920.1	1438	A	G	0.9647	198	7,191	MT-TV	upstream_gene_variant	MODIFIER	n.-164A>G	.	.	.	.	0.956096	7.11579e-05	53745	4	SNV	4	MC+MM+NC+NM	SI	0.9643	196	7,189	0.965	200	7,193	pileup
+NC_012920.1	1736	A	G	0.9893	1075	10,1064	MT-TL1	upstream_gene_variant	MODIFIER	n.-1494A>G	.	.	.	.	0.047446	0	2677	0	SNV	4	MC+MM+NC+NM	SI	0.9893	1028	10,1017	0.9893	1122	10,1110	pileup
+NC_012920.1	2202	C	T	0.0689	818	762,56	MT-TL1	upstream_gene_variant	MODIFIER	n.-1028C>T	.	.	.	.	.	.	.	.	SNV	2	MM+NM	NO	0.0673	773	721,52	0.0706	864	803,61	pileup
+NC_012920.1	2706	A	G	0.9951	814	4,810	MT-TL1	upstream_gene_variant	MODIFIER	n.-524A>G	.	.	.	.	0.739491	8.92522e-05	41427	5	SNV	4	MC+MM+NC+NM	SI	0.9961	774	3,771	0.9941	854	4,849	pileup
+NC_012920.1	3106	CN	C	0.9390	1114	12,1046	MT-TL1	upstream_gene_variant	MODIFIER	n.-123delA	.	.	.	.	.	.	.	.	INDEL	2	MC+NC	NO	0.9292	1116	16,1037	0.9488	1113	8,1056	Clair3
+NC_012920.1	4248	T	C	0.8865	770	88,682	MT-ND1	synonymous_variant	LOW	c.942T>C	p.Ile314Ile	.	.	.	0.0483905	7.09019e-05	2730	4	SNV	4	MC+MM+NC+NM	SI	0.8909	724	79,645	0.8822	815	96,719	pileup
+NC_012920.1	4769	A	G	0.9981	765	0,764	MT-ND2	synonymous_variant	LOW	c.300A>G	p.Met100Met	.	.	.	0.983868	3.54931e-05	55440	2	SNV	4	MC+MM+NC+NM	SI	0.9986	725	0,724	0.9975	805	1,803	pileup
+NC_012920.1	4824	A	G	0.9699	681	4,660	MT-ND2	missense_variant	MODERATE	c.355A>G	p.Thr119Ala	.	.	.	0.0477457	1.77296e-05	2693	1	SNV	4	MC+MM+NC+NM	SI	0.9705	645	3,626	0.9693	717	6,695	pileup
+NC_012920.1	7028	C	T	0.9986	350	0,350	MT-CO1	synonymous_variant	LOW	c.1125C>T	p.Ala375Ala	.	.	.	0.749396	3.60373e-05	41590	2	SNV	4	MC+MM+NC+NM	SI	1	343	0,343	0.9972	357	0,356	pileup
+NC_012920.1	7618	C	T	0.0575	261	246,15	MT-CO2	synonymous_variant	LOW	c.33C>T	p.Asp11Asp	.	.	.	0.000124039	0	7	0	SNV	2	MM+NM	NO	0.0584	257	242,15	0.0566	265	250,15	pileup
+NC_012920.1	8027	G	A	0.9915	295	2,292	MT-CO2	missense_variant	MODERATE	c.442G>A	p.Ala148Thr	.	.	.	0.0739683	0.000124138	4171	7	SNV	4	MC+MM+NC+NM	SI	0.9931	290	1,288	0.99	300	2,297	pileup
+NC_012920.1	8794	C	T	0.9873	274	3,271	MT-ATP6	missense_variant	MODERATE	c.268C>T	p.His90Tyr	.	.	.	0.0475043	0	2680	0	SNV	4	MC+MM+NC+NM	SI	0.9888	267	3,264	0.9858	282	3,278	pileup
+NC_012920.1	8860	A	G	0.9946	273	2,272	MT-ATP6	missense_variant	MODERATE	c.334A>G	p.Thr112Ala	.	.	.	0.993814	0.000159524	56069	9	SNV	4	MC+MM+NC+NM	SI	0.9962	265	1,264	0.9929	281	2,279	pileup
+NC_012920.1	10201	G	A	0.0565	196	184,11	MT-ND3	missense_variant	MODERATE	c.143G>A	p.Arg48His	.	.	.	.	.	.	.	SNV	2	MM+NM	NO	0.0681	191	178,13	0.0448	201	191,9	pileup
+NC_012920.1	10940	C	T	0.0272	276	268,8	MT-ND4	synonymous_variant	LOW	c.181C>T	p.Leu61Leu	.	.	.	8.85991e-05	0	5	0	SNV	1	MM	NO	0.0259	270	263,7	0.0285	281	273,8	pileup
+NC_012920.1	11719	G	A	1.0000	358	0,358	MT-ND4	synonymous_variant	LOW	c.960G>A	p.Gly320Gly	.	.	.	0.711036	5.34855e-05	39882	3	SNV	4	MC+MM+NC+NM	SI	1	351	0,351	1	366	0,366	pileup
+NC_012920.1	12007	G	A	0.9873	551	7,544	MT-ND4	synonymous_variant	LOW	c.1248G>A	p.Trp416Trp	.	.	.	0.0712209	5.31896e-05	4017	3	SNV	4	MC+MM+NC+NM	SI	0.989	544	6,538	0.9857	558	8,550	pileup
+NC_012920.1	12705	C	T	1.0000	190	0,190	MT-ND5	synonymous_variant	LOW	c.369C>T	p.Ile123Ile	.	.	.	0.488792	4.36948e-05	22373	2	SNV	4	MC+MM+NC+NM	SI	1	190	0,190	1	190	0,190	pileup
+NC_012920.1	13967	C	T	0.0524	124	118,6	MT-ND5	missense_variant	MODERATE	c.1631C>T	p.Thr544Met	.	.	.	0.0018784	0	106	0	SNV	1	MM	NO	0.0484	124	118,6	0.0565	124	117,7	pileup
+NC_012920.1	14766	C	T	1.0000	176	0,176	MT-CYB	missense_variant	MODERATE	c.20C>T	p.Thr7Ile	.	.	.	0.70679	5.34893e-05	39641	3	SNV	4	MC+MM+NC+NM	SI	1	175	0,175	1	177	0,177	pileup
+NC_012920.1	15056	T	C	0.0688	109	102,8	MT-CYB	missense_variant	MODERATE	c.310T>C	p.Tyr104His	.	.	.	0	1.77204e-05	0	1	SNV	2	MM+NM	NO	0.0636	110	103,7	0.0741	108	100,8	pileup
+NC_012920.1	15326	A	G	0.9877	162	2,160	MT-CYB	missense_variant	MODERATE	c.580A>G	p.Thr194Ala	.	.	.	0.993422	0.000212774	56027	12	SNV	4	MC+MM+NC+NM	SI	0.9877	162	2,160	0.9876	161	2,159	pileup
+NC_012920.1	15595	C	T	0.2089	124	98,26	MT-CYB	synonymous_variant	LOW	c.849C>T	p.Ser283Ser	.	.	.	7.08793e-05	1.77198e-05	4	1	SNV	2	MC+NC	NO	0.2114	123	97,26	0.2063	126	100,26	pileup
+NC_012920.1	16111	C	T	1.0000	139	0,139	MT-ND6	upstream_gene_variant	MODIFIER	c.-1438G>A	.	.	.	.	0.0540536	0.000177399	3047	10	SNV	4	MC+MM+NC+NM	SI	1	140	0,140	1	138	0,138	pileup
+NC_012920.1	16223	C	T	0.9905	158	2,157	MT-ND6	upstream_gene_variant	MODIFIER	c.-1550G>A	.	.	.	.	0.394094	0.000515226	22182	29	SNV	4	MC+MM+NC+NM	SI	1	159	0,159	0.981	158	3,155	pileup
+NC_012920.1	16290	C	T	0.9937	159	1,158	MT-ND6	upstream_gene_variant	MODIFIER	c.-1617G>A	.	.	.	.	0.0542961	0.000258465	2941	14	SNV	4	MC+MM+NC+NM	SI	0.9938	162	1,161	0.9936	156	1,155	pileup
+NC_012920.1	16319	G	A	0.9971	171	0,170	MT-ND6	upstream_gene_variant	MODIFIER	c.-1646C>T	.	.	.	.	0.0622762	0.000141819	3513	8	SNV	4	MC+MM+NC+NM	SI	0.9942	173	0,172	1	169	0,169	pileup
+NC_012920.1	16362	T	C	0.9844	128	2,126	MT-ND6	upstream_gene_variant	MODIFIER	c.-1689A>G	.	.	.	.	0.149785	0.000978056	8423	55	SNV	4	MC+MM+NC+NM	SI	0.9844	128	2,126	0.9844	128	2,126	pileup
+NC_012920.1	16549	C	T	0.0515	174	166,9	MT-ND6	upstream_gene_variant	MODIFIER	c.-1876G>A	.	.	.	.	.	.	.	.	SNV	2	MM+NM	NO	0.0508	177	168,9	0.0523	172	163,9	pileup

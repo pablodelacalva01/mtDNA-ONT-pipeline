@@ -8,8 +8,7 @@
 # Descripcion: Pipeline para analisis de variantes mitocondriales a partir
 #              de lecturas largas Nanopore
 #              Parte 2: Alineamiento de secuencias pre-procesadas
-# Entorno conda:
-#   - ont_align: minimap2, ngmlr, gatk4, samtools, qualimap
+# Entorno conda: ont_align
 # Orden del procesamiento:
 #   indexado ref (samtools + minimap2) → BAM → sort → index 
 #   minimap2/ngmlr → gatk4 → flagstat → qualimap
@@ -18,27 +17,31 @@
 set -euo pipefail
 
 #0. CONFIGURACION DE ENTORNO
-# Activacion del entorno de Conda 
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate ont_align
-
 # Variables de entorno
-TFM_DIR="/home/pdelacalvac/TFM"
-INPUT="${TFM_DIR}/Data/Processed/02.Filtered/filtlong"
-OUTPUT="${TFM_DIR}/Data/Processed/03.Alignment"
-RESULTS="${TFM_DIR}/Results"
-REF="${TFM_DIR}/Data/Reference_Genome/mtDNA.fasta"
-LOG_DIR="${TFM_DIR}/Data/Processed/logs"
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+# Ubicacion del script y de la raiz del proyecto
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
+
+# Ubicacion de directorios
+INPUT="${PROJECT_DIR}/Data/Processed/02.Filtered/filtlong"
+REF="${PROJECT_DIR}/Data/Reference_Genome/mtDNA.fasta"
+OUTPUT="${PROJECT_DIR}/Data/Processed/03.Alignment"
+RESULTS="${PROJECT_DIR}/Results"
+TIMESTAMP=$(date +"%Y_%m_%d_%H:%M:%S")
+COV_DIR="${RESULTS}/Alignment/Coverage"
+COV_SUMMARY="${COV_DIR}/coverage_summary_${TIMESTAMP}.tsv"
+LOG_DIR="${OUTPUT}/logs"
+
+
 THREADS=4
 GATK4_MEM="3g" # Memoria para GATK4 (ajustar segun RAM disponible)
-GATK4_TMP="${TFM_DIR}/Data/tmp"
+GATK4_TMP="${INPUT}/Data/tmp"
 
 # Creacion de directorios de salida
 mkdir -p "${OUTPUT}/minimap2" "${OUTPUT}/ngmlr" "${OUTPUT}/QC" \
 "${OUTPUT}/QC/minimap2" "${OUTPUT}/QC/ngmlr/" "${OUTPUT}/markdup/minimap2" "${OUTPUT}/markdup/ngmlr/" \
 "${OUTPUT}/QC/markdup/minimap2" "${OUTPUT}/QC/markdup/ngmlr/" \
-"${GATK4_TMP}"
+"${GATK4_TMP}" "${OUTPUT}/logs" "${COV_DIR}"
 
 LOGFILE="${LOG_DIR}/pipeline_align_${TIMESTAMP}.log"
 exec > >(tee -a "${LOGFILE}") 2>&1
@@ -169,7 +172,7 @@ for FILTERED in "${FILTERED_FILES[@]}"; do
     BAM="${NGMLR_DIR}/${SAMPLE}_ngmlr.bam"
     RG_TAG="@RG\tID:${SAMPLE}\tSM:${SAMPLE}\tLB:mtDNA_lib\tPL:ONT\tPU:${SAMPLE}"
 
-    echo "[NGMLR - ${SAMPLE}] Alineando..."
+    echo "[ngmlr - ${SAMPLE}] Alineando..."
     # NGMLR usa la referencia directamente.
     # --rg-id, --rg-sm: flags de Read Group en NGMLR
     # -x ont: preset para Oxford Nanopore
@@ -180,7 +183,7 @@ for FILTERED in "${FILTERED_FILES[@]}"; do
 
     sam_to_sorted_bam "${SAM}" "${BAM}" "${SAMPLE}" "ngmlr"
     BAM_NGMLR+=("${BAM}")
-    echo "[NGMLR - ${SAMPLE}] Completado"
+    echo "[ngmlr - ${SAMPLE}] Completado"
 done
 echo "[Paso 3.2. - Alineamiento NGMLR - Completado]"
 
@@ -273,7 +276,7 @@ run_qc_bam() {
     } >> "${REPORT_TXT}"
 
     #5.1. Qualimap bamqc
-    echo "[Informe global de calidad - Qualimap]: ${SAMPLE}"
+    echo "[Informe global de calidad - qualimap]: ${SAMPLE}"
     # QC visual detallado
     # calidad de mapeo, sesgo GC 
     # --java-mem-size: ajustar segun RAM disponible
@@ -282,7 +285,7 @@ run_qc_bam() {
         > "${LOG_DIR}/${SAMPLE}_${TOOL}_qualimap.log" 2>&1
 }
 
-#5.1. QC para cada BAM de minimap2
+#5.1. QC para cada BAM de minimap2 + ngmlr, pre y post-duplicados
 echo "[Paso 5.1.] QC minimap2 (pre-markdup)"
 for BAM in "${BAM_MINIMAP2[@]}"; do
     SAMPLE=$(basename "${BAM}" _minimap2.bam)
@@ -306,7 +309,37 @@ for BAM in "${BAM_MARKDUP_NGMLR[@]}"; do
     SAMPLE=$(basename "${BAM}" _ngmlr_markdup.bam)
     run_qc_bam "${BAM}" "${SAMPLE}" "ngmlr_markdup" "${OUTPUT}/QC/markdup/ngmlr/${SAMPLE}"
 done
+
 echo "[Paso 5 completado] Reporte generado en: ${REPORT_TXT}"
+#--------------------------------------------------------------------------------------------------------------------------------
+#6. COBERTURA DEL GENOMA MITOCONDRIAL (samtools depth + plot_coverage.py)
+    # NOTA_1: Se usan los BAM PRE-markdup (todas las lecturas alineadas)
+    # NOTA_2: NO se aplican filtros de calidad: -q 0 (calidad de base) y -Q 0 (MAPQ)
+echo "[Paso 6 - Generando resumen y gráficos de cobertura por base del genoma mitocondrial]"
+
+for BAM_MM2 in "${BAM_MINIMAP2[@]}"; do
+    SAMPLE=$(basename "${BAM_MM2}" _minimap2.bam)
+    BAM_NG="${OUTPUT}/ngmlr/${SAMPLE}/${SAMPLE}_ngmlr.bam"
+    SAMPLE_COV_DIR="${COV_DIR}/${SAMPLE}"
+    mkdir -p "${SAMPLE_COV_DIR}"
+ 
+    DEPTH_MM2="${SAMPLE_COV_DIR}/${SAMPLE}_minimap2_depth.tsv"
+    DEPTH_NG="${SAMPLE_COV_DIR}/${SAMPLE}_ngmlr_depth.tsv"
+ 
+    echo "[Analizando cobertura - ${SAMPLE} de minimap2 y ngmlr]"
+    #   -a : incluye posiciones con cobertura 0 (imprescindible para ver huecos)
+    #   -J : cuenta las lecturas con delecion en esa posicion (los indels son frecuentes en ONT)
+    #   -m 0 : sin limite maximo de profundidad
+    samtools depth -a -J -q 0 -Q 0 -m 0 "${BAM_MM2}" > "${DEPTH_MM2}"
+    samtools depth -a -J -q 0 -Q 0 -m 0 "${BAM_NG}"  > "${DEPTH_NG}"
+ 
+    python3 "${SCRIPT_DIR}/plot_coverage.py" \
+        --sample "${SAMPLE}" \
+        --out "${SAMPLE_COV_DIR}/${SAMPLE}_coverage.png" \
+        --summary-tsv "${COV_SUMMARY}" \
+        "minimap2=${DEPTH_MM2}" "ngmlr=${DEPTH_NG}"
+done
+echo "[Paso 6 completado] Gráficos y tablas en: ${COV_DIR}"
 
 echo "[Pipeline de alineamiento - Completado]: $(date)"
 

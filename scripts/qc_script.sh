@@ -18,19 +18,18 @@
 set -euo pipefail
 
 #0. CONFIGURACION DE ENTORNO: 
-# Activacion del entorno de Conda 
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate ont_qc
+# Ubicacion del script y de la raiz del proyecto
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
 
-# Variables de entorno
-TFM_DIR="/home/pdelacalvac/TFM"
-FASTQ_PASS="${TFM_DIR}/Data/Raw/fastq_pass"
-OUTPUT="${TFM_DIR}/Data/Processed"
-REF="${TFM_DIR}/Data/Reference/NC_012920.1.fa"
+# Ubicacion de directorios
+FASTQ_PASS="${PROJECT_DIR}/Data/Raw/fastq_pass"
+OUTPUT="${PROJECT_DIR}/Data/Processed"
+RESULTS="${PROJECT_DIR}/Results"
 LOG_DIR="${OUTPUT}/logs"
-TIMESTAMP=$(date +"%Y/%m/%d_%H:%M:%S")
+TIMESTAMP=$(date +"%Y_%m_%d_%H:%M:%S")
 
-# Creacion de directorios de salida
+# Creacion de directorios
 mkdir -p "${OUTPUT}/00.Merged_Data" "${OUTPUT}/01.QC/nanoplot" \
     "${OUTPUT}/02.Filtered/porechop" "${OUTPUT}/02.Filtered/nanofilt" "${OUTPUT}/02.Filtered/filtlong" "${OUTPUT}/02.Filtered/nanoplot_filtered" \
     "${LOG_DIR}" \
@@ -39,13 +38,15 @@ mkdir -p "${OUTPUT}/00.Merged_Data" "${OUTPUT}/01.QC/nanoplot" \
 #1. ENTRADA DE DATOS
 echo "Iniciando pipeline de control de calidad y análisis de lecturas en Nanopore - [${TIMESTAMP}]"
 echo "[Paso 1 - ${TIMESTAMP}] Identificación de muestras crudas (Merged por muestras)"
-    # Identificacion de barcodes
+  
+# Identificacion de archivos de entrada
 BARCODES=($(ls -d ${FASTQ_PASS}/barcode* 2>/dev/null | xargs -n 1 basename))
 if [[ ${#BARCODES[@]} -eq 0 ]]; then
     echo "ERROR: No se encontraron carpetas de barcodes en ${FASTQ_PASS}" >&2
     exit 1
 fi
-    #Array: Almacen de acrhivos merged (1 merged por muestra)
+   
+# Array: Almacen de archivos, 1 merged por muestra
 MERGED_FILES=()
 
 for BARCODE in "${BARCODES[@]}"; do
@@ -53,10 +54,31 @@ for BARCODE in "${BARCODES[@]}"; do
     MERGED_OUT="${OUTPUT}/00.Merged_Data/${BARCODE}_merged.fastq.gz"
     echo "Realizando merged: ${BARCODE}"
 
-    FASTQ_FILES=( $(ls "${BARCODE_DIR}"/*.fastq.gz 2>/dev/null) )
+    # Comprobacion de archivos
+    shopt -s nullglob
+    FASTQ_FILES=( "${BARCODE_DIR}"/*.fastq.gz )
+    shopt -u nullglob
+
+    if [[ ${#FASTQ_FILES[@]} -eq 0 ]]; then
+        echo "AVISO: ${BARCODE} no contiene archivos fastq.gz, se omite" >&2
+        continue
+    fi
+
+    # Check de orden de los archivos de entrada
+    mapfile -t FASTQ_FILES < <(printf '%s\n' "${FASTQ_FILES[@]}" | sort -V)
     cat "${FASTQ_FILES[@]}" > "${MERGED_OUT}"
+
+    # Comprobaciones de archivos de salida
+    gzip -t "${MERGED_OUT}"
+    N_IN=$(zcat "${FASTQ_FILES[@]}" | awk 'END{print NR/4}')
+    N_OUT=$(zcat "${MERGED_OUT}" | awk 'END{print NR/4}')
+    if [[ "$N_IN" != "$N_OUT" ]]; then
+        echo "ERROR: nº de lecturas distinto en ${BARCODE} (${N_IN} vs ${N_OUT})" >&2
+        exit 1
+    fi
+
     MERGED_FILES+=("${MERGED_OUT}")
-    echo "Archivo correctamente merged para ${BARCODE}: ${MERGED_OUT}"
+    echo "Archivos correctamente juntados para la muestra ${BARCODE}, ubicado en: ${MERGED_OUT}"
 done
 echo "[Merge completado] Total de muestras: ${#MERGED_FILES[@]}"
 
@@ -77,10 +99,10 @@ echo "[QC completado] Resultados en ${OUTPUT}/01.QC/"
 #3. TRIMMING Y FILTRADO
 echo "[Paso 3 - ${TIMESTAMP}] Trimming de adaptadores, filtrado de calidad y QC final (Porechop + NanoFilt + Filtlong + NanoPlot)"
 # Parametros de filtrado: Ajustar umbrales
-NANOFILT_Q=10          # Calidad minima media por read
-NANOFILT_MINLEN=500    # Longitud minima (bp)
 NANOFILT_HEADCROP=10   # Recorte de los primeros N bp
-FILTLONG_MINLEN=500     # Longitud minima para Filtlong
+NANOFILT_Q=10          # Calidad minima media por read
+NANOFILT_MINLEN=200    # Longitud minima (bp)
+FILTLONG_MINLEN=200     # Longitud minima para Filtlong
 FILTLONG_MINQ=80        # Calidad minima media para Filtlong (escala 0-100)
 
 FILTERED_FILES=()

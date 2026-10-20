@@ -1,25 +1,17 @@
 name: ont_vc
 # --------------------------------------------------------------------------------
-# Autor:   Pablo de la Calva Castineira
-# Fecha:   05/05/2026
-# Titulo:  "Analisis bioinformatico y su implementacion en la practica clinica
-#           diaria de datos de NGS de lecturas largas mediante tecnologa Nanopore"
-#
-# Entorno conda para el pipeline de llamada de variantes de lecturas mtDNA de Nanopore 
-# Orden del procesamiento:
-#   verificar (modelos clair3) → clair3 (pileup/full → merge) → mutserve → 
-#   bcftools merge → normalizar → comparacion → indexar → informe
+# Entorno conda para el pipeline de alineamiento de lecturas Nanopore
 #
 # Crear entorno : conda env create -f ont_vc.yml
 # Activar       : conda activate ont_vc
-# Verificar     : conda env list
+# Verificar     : conda list
 #
 # NOTAS DE COMPATIBILIDAD:
 #   - Clair3 v2.0.1 requiere Python 3.11 y PyTorch (NO)
-#   - PyTorch se instala via pip DESPUES de crear el entorno (instalacion)
+#   - PyTorch se instala via pip DESPUES de crear el entorno (ver abajo)
 #   - Clair3 bioconda v2.0..1 incluye: whatshap, parallel, pypy3, longphase
-#   - samtools y bcftools comparten HTSlib (misma version)
-#   - samtools >= 1.10 requerido por Clair3 (v1.23, ultima version estable)
+#   - samtools y bcftools comparten HTSlib (deben ser la misma version)
+#   - samtools >= 1.10 requerido por Clair3 (usando: v1.23, ultima estable)
 # INSTALACION:
 #   1. Crear entorno:
 #        conda env create -f ont_vc.yml
@@ -32,14 +24,14 @@ name: ont_vc
 #        uv pip install numpy h5py hdf5plugin numexpr tqdm cffi torchmetrics
 #   5. Descargar modelos PyTorch:
 #       Modelos ONT: https://www.bio8.cs.hku.hk/clair3/clair3_models_rerio_pytorch/
-#       5.1. Creacion directorio propio para los modelos: mkdir -p /home/.../clair3_models → cd clair3_models
+#       5.1. Creacion directorio propio para los modelos: mkdir -p "${OUTPUT}/clair3_models" → cd clair3_models
 #       5.2. Descargar modelo: 
 #         wget https://www.bio8.cs.hku.hk/clair3/clair3_models_rerio_pytorch/r1041_e82_400bps_sup_v500/pileup.pt (rapido, deteccion inicial)
 #         wget https://www.bio8.cs.hku.hk/clair3/clair3_models_rerio_pytorch/r1041_e82_400bps_sup_v500/full_alignment.pt (preciso, refinamiento)
-#   6. Descargar Mutserve2 (version java no disponible para conda/pip)
+#   6. Descargar Mutverse2 (version java no disponible para conda/pip)
 #        6.1. Creacion directorio en el env de conda: mkdir -p /directorio_interes 
 #        6.2. Descarga del programa en la carpeta 6.1.: curl -sL mutserve.vercel.app | bash
-#        6.3. Permisos de ejecucion: chmod +x /directorio_interes/mutserve2 
+#        6.3. Permisos de ejecucion: chmod +x /directorio_interes/mutserve
 #        6.4. Crear enlace simbolico para trabajar comodamente: ln -s /directorio_mutserver /directorio_conda
 # -------------------------------------------------------------------------------------------------------------------------------
 channels:

@@ -1,0 +1,2 @@
+"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
+"barcode88"	"H3ap"	"1"	"1.0000"	"1-16569"	""	"263G 750G 1438G 4769G 6776C 8860G 10915C 15326G"	"1489A (globalPrivateMutation) 3243G (globalPrivateMutation) 3489G (globalPrivateMutation) 15595T (globalPrivateMutation) 16519C (hotspot)"	""	"263G 750G 1438G 1489A 3243G 3489G 4769G 6776C 8860G 10915C 15326G 15595T 16519C"

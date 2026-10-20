@@ -28,14 +28,16 @@
 set -euo pipefail
 
 #0. CONFIGURACION DE ENTORNO
-TFM_DIR="/home/pdelacalvac/TFM"
-DB_DIR="${TFM_DIR}/Data/Annotation_DBs"
-TOOLS_DIR="${TFM_DIR}/Tools"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
+
+DB_DIR="${PROJECT_DIR}/Data/Annotation_DBs"
+TOOLS_DIR="${PROJECT_DIR}/Tools"
 HAPLOGREP_DIR="${TOOLS_DIR}/haplogrep3"
-SCRIPTS_DIR="${TFM_DIR}/Scripts"
-LOG_DIR="${TFM_DIR}/Data/Processed/logs"
+SCRIPTS_DIR="${PROJECT_DIR}/Scripts"
+LOG_DIR="${PROJECT_DIR}/Data/Processed/logs"
 DB_VERSION_LOG="${DB_DIR}/db_versions.log"
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+TIMESTAMP=$(date +"%Y_%m_%d_%H:%M:%S")
 
 # Contig mtDNA en la referencia rCRS
 CONTIG="NC_012920.1"
@@ -110,7 +112,7 @@ require java
 require bgzip
 
 # Crear directorios necesarios
-mkdir -p "${DB_DIR}" "${TOOLS_DIR}" 
+mkdir -p "${DB_DIR}" "${TOOLS_DIR}" "${LOG_DIR}"
 
 # Inicializar log de versiones si no existe
 if [[ ! -f "${DB_VERSION_LOG}" ]]; then
@@ -226,8 +228,6 @@ log "gnomAD mitocondrial descargado y procesado → ${GNOMAD_OUT}"
     echo " Log de versiones: ${DB_VERSION_LOG} "
     echo ""
     echo " Siguiente paso: "
-    echo "    bash ${SCRIPTS_DIR}/annot_script4.sh"
+    echo "    bash ${SCRIPTS_DIR}/annot_script.sh"
     echo "--------------------------------------------------------------------------------------------"
 } | tee -a "${LOG_DIR}/setup_${TIMESTAMP}.log"
-
-# --------------------------------------------------------------------------------------------

@@ -1,0 +1,935 @@
+--------------------------------------------------------------------------------------------
+INFORME DE VARIANT CALLING - mtDNA ONT
+Fecha:            Tue Oct 13 13:06:54 CEST 2026
+Referencia:       /home/pablo/pipeline_ONT_v1/Data/Reference_Genome/mtDNA.fasta (NC_012920.1)
+Clair3 modelo:    /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/clair3_models
+--------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode01
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           17 variantes
+  minimap2 + Mutserve2 (MM):          9 variantes
+  ngmlr    + Clair3  (NC):           16 variantes
+  ngmlr    + Mutserve2 (NM):          9 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           18 variantes
+    → SNVs:                        15
+    → Indels:                       3
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/barcode01_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         17      9          9        8        0   0.5294
+  MC_vs_NC         17     16         15        2        1   0.8333
+  MC_vs_NM         17      9          9        8        0   0.5294
+  MM_vs_NC          9     16          9        0        7   0.5625
+  MM_vs_NM          9      9          9        0        0   1.0000
+  NC_vs_NM         16      9          9        7        0   0.5625
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	17
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	14
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	9
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	9
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	16
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	13
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	9
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	9
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/barcode01_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode01/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode86
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           38 variantes
+  minimap2 + Mutserve2 (MM):         37 variantes
+  ngmlr    + Clair3  (NC):           38 variantes
+  ngmlr    + Mutserve2 (NM):         39 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           46 variantes
+    → SNVs:                        43
+    → Indels:                       3
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/barcode86_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         38     37         34        4        3   0.8293
+  MC_vs_NC         38     38         37        1        1   0.9487
+  MC_vs_NM         38     39         32        6        7   0.7111
+  MM_vs_NC         37     38         33        4        5   0.7857
+  MM_vs_NM         37     39         35        2        4   0.8537
+  NC_vs_NM         38     39         31        7        8   0.6739
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	35
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	37
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	37
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	35
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	39
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	39
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/barcode86_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode86/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode87
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           38 variantes
+  minimap2 + Mutserve2 (MM):         39 variantes
+  ngmlr    + Clair3  (NC):           39 variantes
+  ngmlr    + Mutserve2 (NM):         40 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           45 variantes
+    → SNVs:                        43
+    → Indels:                       2
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/barcode87_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         38     39         35        3        4   0.8333
+  MC_vs_NC         38     39         38        0        1   0.9744
+  MC_vs_NM         38     40         34        4        6   0.7727
+  MM_vs_NC         39     39         35        4        4   0.8140
+  MM_vs_NM         39     40         38        1        2   0.9268
+  NC_vs_NM         39     40         34        5        6   0.7556
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	36
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	2
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	39
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	39
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	39
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	37
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	2
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	40
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	40
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/barcode87_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode87/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode88
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           17 variantes
+  minimap2 + Mutserve2 (MM):         13 variantes
+  ngmlr    + Clair3  (NC):           16 variantes
+  ngmlr    + Mutserve2 (NM):         11 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           20 variantes
+    → SNVs:                        16
+    → Indels:                       4
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/barcode88_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         17     13         10        7        3   0.5000
+  MC_vs_NC         17     16         16        1        0   0.9412
+  MC_vs_NM         17     11         10        7        1   0.5556
+  MM_vs_NC         13     16         10        3        6   0.5263
+  MM_vs_NM         13     11         11        2        0   0.8462
+  NC_vs_NM         16     11         10        6        1   0.5882
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	17
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	13
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	13
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	13
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	16
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	12
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	11
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	11
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/barcode88_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode88/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode89
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           12 variantes
+  minimap2 + Mutserve2 (MM):         81 variantes
+  ngmlr    + Clair3  (NC):           13 variantes
+  ngmlr    + Mutserve2 (NM):         75 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           94 variantes
+    → SNVs:                        92
+    → Indels:                       2
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/barcode89_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         12     81          9        3       72   0.1071
+  MC_vs_NC         12     13         12        0        1   0.9231
+  MC_vs_NM         12     75          9        3       66   0.1154
+  MM_vs_NC         81     13          9       72        4   0.1059
+  MM_vs_NM         81     75         66       15        9   0.7333
+  NC_vs_NM         13     75          9        4       66   0.1139
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	12
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	10
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	2
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	81
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	81
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	13
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	11
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	2
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	75
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	75
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/barcode89_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode89/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode90
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           38 variantes
+  minimap2 + Mutserve2 (MM):         36 variantes
+  ngmlr    + Clair3  (NC):           38 variantes
+  ngmlr    + Mutserve2 (NM):         35 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           43 variantes
+    → SNVs:                        39
+    → Indels:                       4
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/barcode90_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         38     36         33        5        3   0.8049
+  MC_vs_NC         38     38         37        1        1   0.9487
+  MC_vs_NM         38     35         33        5        2   0.8250
+  MM_vs_NC         36     38         33        3        5   0.8049
+  MM_vs_NM         36     35         34        2        1   0.9189
+  NC_vs_NM         38     35         33        5        2   0.8250
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	35
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	36
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	36
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	34
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	35
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	35
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/barcode90_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode90/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode91
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           43 variantes
+  minimap2 + Mutserve2 (MM):         38 variantes
+  ngmlr    + Clair3  (NC):           44 variantes
+  ngmlr    + Mutserve2 (NM):         36 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           53 variantes
+    → SNVs:                        48
+    → Indels:                       5
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/barcode91_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         43     38         33       10        5   0.6875
+  MC_vs_NC         43     44         40        3        4   0.8511
+  MC_vs_NM         43     36         33       10        3   0.7174
+  MM_vs_NC         38     44         34        4       10   0.7083
+  MM_vs_NM         38     36         34        4        2   0.8500
+  NC_vs_NM         44     36         34       10        2   0.7391
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	43
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	39
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	38
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	44
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	40
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	36
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	36
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/barcode91_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode91/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode92
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           32 variantes
+  minimap2 + Mutserve2 (MM):         37 variantes
+  ngmlr    + Clair3  (NC):           33 variantes
+  ngmlr    + Mutserve2 (NM):         35 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           43 variantes
+    → SNVs:                        39
+    → Indels:                       4
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/barcode92_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         32     37         28        4        9   0.6829
+  MC_vs_NC         32     33         32        0        1   0.9697
+  MC_vs_NM         32     35         28        4        7   0.7179
+  MM_vs_NC         37     33         28        9        5   0.6667
+  MM_vs_NM         37     35         34        3        1   0.8947
+  NC_vs_NM         33     35         28        5        7   0.7000
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	32
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	29
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	37
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	37
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	33
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	29
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	35
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	35
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/barcode92_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode92/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode93
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           48 variantes
+  minimap2 + Mutserve2 (MM):         47 variantes
+  ngmlr    + Clair3  (NC):           48 variantes
+  ngmlr    + Mutserve2 (NM):         48 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           56 variantes
+    → SNVs:                        51
+    → Indels:                       5
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/barcode93_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         48     47         42        6        5   0.7925
+  MC_vs_NC         48     48         48        0        0   1.0000
+  MC_vs_NM         48     48         42        6        6   0.7778
+  MM_vs_NC         47     48         42        5        6   0.7925
+  MM_vs_NM         47     48         45        2        3   0.9000
+  NC_vs_NM         48     48         42        6        6   0.7778
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	48
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	43
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	5
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	47
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	47
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	48
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	43
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	5
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	48
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	48
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/barcode93_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode93/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode94
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           37 variantes
+  minimap2 + Mutserve2 (MM):         45 variantes
+  ngmlr    + Clair3  (NC):           38 variantes
+  ngmlr    + Mutserve2 (NM):         42 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           52 variantes
+    → SNVs:                        48
+    → Indels:                       4
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/barcode94_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         37     45         34        3       11   0.7083
+  MC_vs_NC         37     38         37        0        1   0.9737
+  MC_vs_NM         37     42         34        3        8   0.7556
+  MM_vs_NC         45     38         34       11        4   0.6939
+  MM_vs_NM         45     42         39        6        3   0.8125
+  NC_vs_NM         38     42         34        4        8   0.7391
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	37
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	34
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	3
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	45
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	45
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	38
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	34
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	42
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	42
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/barcode94_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode94/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode95
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           44 variantes
+  minimap2 + Mutserve2 (MM):         42 variantes
+  ngmlr    + Clair3  (NC):           44 variantes
+  ngmlr    + Mutserve2 (NM):         42 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           52 variantes
+    → SNVs:                        46
+    → Indels:                       6
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/barcode95_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         44     42         38        6        4   0.7917
+  MC_vs_NC         44     44         41        3        3   0.8723
+  MC_vs_NM         44     42         37        7        5   0.7551
+  MM_vs_NC         42     44         37        5        7   0.7551
+  MM_vs_NM         42     42         40        2        2   0.9091
+  NC_vs_NM         44     42         37        7        5   0.7551
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	44
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	40
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	42
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	42
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	44
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	39
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	5
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	42
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	42
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/barcode95_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode95/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  MUESTRA: barcode96
+-------------------------------------------------------------------------
+
+-------Variantes por caller/alineador -----------------------------------
+  minimap2 + Clair3  (MC):           15 variantes
+  minimap2 + Mutserve2 (MM):         13 variantes
+  ngmlr    + Clair3  (NC):           15 variantes
+  ngmlr    + Mutserve2 (NM):         14 variantes
+
+------- Merge de los 4 callers (union total) ----------------------------
+  Total variantes únicas:           19 variantes
+    → SNVs:                        14
+    → Indels:                       5
+    → Archivo:                 /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/barcode96_all_callers_merged.vcf.gz
+
+------- Comparación por pares -------------------------------------------
+  Par            N_V1   N_V2 Compartidas  Priv_V1  Priv_V2  Jaccard
+  ------------------------------------------------------------------------
+  MC_vs_MM         15     13         11        4        2   0.6471
+  MC_vs_NC         15     15         14        1        1   0.8750
+  MC_vs_NM         15     14         11        4        3   0.6111
+  MM_vs_NC         13     15         11        2        4   0.6471
+  MM_vs_NM         13     14         13        0        1   0.9286
+  NC_vs_NM         15     14         11        4        3   0.6111
+
+------- Estadísticas detalladas (bcftools stats) ------------------------
+  ## minimap2 + Clair3 (MC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	15
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	11
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## minimap2 + Mutserve2 (MM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	13
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	13
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Clair3 (NC)
+  SN	0	number of samples:	1
+  SN	0	number of records:	15
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	11
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	4
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+  ## ngmlr + Mutserve2 (NM)
+  SN	0	number of samples:	1
+  SN	0	number of records:	14
+  SN	0	number of no-ALTs:	0
+  SN	0	number of SNPs:	14
+  SN	0	number of MNPs:	0
+  SN	0	number of indels:	0
+  SN	0	number of others:	0
+  SN	0	number of multiallelic sites:	0
+  SN	0	number of multiallelic SNP sites:	0
+
+------- Archivos generados ----------------------------------------------
+  Merge total:         /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/barcode96_all_callers_merged.vcf.gz
+  isec MC_vs_MM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_MC_vs_MM/
+  isec MC_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_MC_vs_NC/
+  isec MC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_MC_vs_NM/
+  isec MM_vs_NC:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_MM_vs_NC/
+  isec MM_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_MM_vs_NM/
+  isec NC_vs_NM:       /home/pablo/pipeline_ONT_v1/Data/Processed/04.Variants/comparison/barcode96/isec_NC_vs_NM/
+
+-------------------------------------------------------------------------
+  FIN DEL INFORME
+  Completado: Tue Oct 13 13:07:16 CEST 2026
+-------------------------------------------------------------------------

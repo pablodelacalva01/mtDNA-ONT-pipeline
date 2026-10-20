@@ -7,7 +7,7 @@ name: ont_annot
 #
 # Entorno conda para el pipeline de anotacion de variantes de lecturas mtDNA de Nanopore 
 #
-# Crear entorno : conda env create -f ont_annot.yml
+# Crear entorno : mamba env create -f ont_annot.yml
 # Activar       : conda activate ont_annot
 # Verificar     : conda env list
 #
@@ -15,11 +15,6 @@ name: ont_annot
 #   Este entorno es INDEPENDIENTE de ont_vc (variant calling).
 #   Separacion deliberada para evitar conflictos Perl/Python entre VEP y Clair3/PyTorch.
 #   Comparte bcftools (misma version 1.23) para garantizar compatibilidad de VCFs.
-#
-# REFERENCIA PARA EL PIPELINE:
-#   rCRS → NC_012920.1 (GRCh38.p14)
-#   SnpEff trabaja con esta nomenclatura de forma nativa → sin renombrado de contigs.
-#   ClinVar y gnomAD usan chrM → el renombrado se gestiona automaticamente en setup.sh.
 #
 # HERRAMIENTAS:
 #   - snpeff:      Anotacion funcional → Base de datos compatible con NC_012920.1 (rCRS)
@@ -41,13 +36,60 @@ name: ont_annot
 #        conda activate ont_vc
 #   3. Instalar base de datos SnpEff (mtDNA incluido):
 #      snpEff download GRCh38.99
-#   4. Ejecutar script de annot_setup.sh
-#   El mismo script sirve para actualizar las bases de datos:
-#   bash /home/.../annot_setup.sh --update
+#      
+#    NOTAS:
+#      - Se descarga una sola vez
+#      - Para actualizar cuando salga nueva version de SnpEff:
+#          conda update -c bioconda snpeff     # actualiza binario
+#          snpEff download GRCh38.99           # actualiza DB si cambia version
+#      - Para verificar la instalacion:
+#          snpEff databases | grep GRCh38
+#   4. Descargar e instalar Haplogrep3 (solo version java (.jar) no disponible para conda):
+#      HAPLOGREP_DIR="/home/.../haplogrep3" 
+#      mkdir -p "${HAPLOGREP_DIR}"
+#      wget -O "${HAPLOGREP_DIR}/haplogrep3.jar" https://github.com/genepi/haplogrep3/releases/latest/download/haplogrep3.jar
+#      
+#      4.1. Verificar: java -jar "${HAPLOGREP_DIR}/haplogrep3.jar" --version
+#      4.2. Enlace simbolico para comodidad en el pipeline: ln -s "${HAPLOGREP_DIR}/haplogrep3.jar" /home/.../haplogrep3.jar
+#   5. Descarga de base de datos de anotacion:
+#    DB_DIR="/home/.../Annotation_DBs"
+#    mkdir -p "${DB_DIR}"
+#    cd "${DB_DIR}"
 #
-#   Diferencia entre ambos modos:
-#     Sin flag:    instalacion completa (HaploGrep3 + descarga inicial de todas las DBs)
-#     --update:    solo actualiza ClinVar, gnomAD y HmtVar (omite HaploGrep3)
+#    5.1. ClinVar (variantes patogrnicas humanas, incluye mtDNA):
+#         wget https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+#         wget https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz.tbi
+#         # Filtrar solo variantes mitocondriales y renombrar contig chrM → NC_012920.1:
+#         echo "chrM NC_012920.1" > chrM_to_rCRS.txt
+#         bcftools view -r chrM clinvar.vcf.gz | bcftools annotate --rename-chrs chrM_to_rCRS.txt \
+#             -Oz -o clinvar_mt_rCRS.vcf.gz
+#         bcftools index --tbi clinvar_mt_rCRS.vcf.gz
+#         rm -f clinvar.vcf.gz clinvar.vcf.gz.tbi
+#
+#    5.2. gnomAD mitocondrial v3.1 (frecuencias poblacionales):
+#         wget https://storage.googleapis.com/gcp-public-data--gnomad/release/3.1/vcf/genomes/gnomad.genomes.v3.1.sites.chrM.vcf.bgz
+#         wget https://storage.googleapis.com/gcp-public-data--gnomad/release/3.1/vcf/genomes/gnomad.genomes.v3.1.sites.chrM.vcf.bgz.tbi
+#         # Renombrar contig chrM → NC_012920.1:
+#         bcftools annotate --rename-chrs chrM_to_rCRS.txt gnomad.genomes.v3.1.sites.chrM.vcf.bgz \
+#             -Oz -o gnomad_mt_rCRS.vcf.gz
+#         bcftools index --tbi gnomad_mt_rCRS.vcf.gz
+#         rm -f gnomad.genomes.v3.1.sites.chrM.vcf.bgz gnomad.genomes.v3.1.sites.chrM.vcf.bgz.tbi
+#
+#    5.3. HmtVar (patogenicidad + frecuencias HmtDB):
+#         wget "https://www.hmtvar.uniba.it/api/main/mutation/all/?format=vcf" \
+#             -O hmtvar_all.vcf
+#         bgzip hmtvar_all.vcf
+#         bcftools index --tbi hmtvar_all.vcf.gz
+#         NOTA: HmtVar usa coordenadas rCRS (NC_012920.1) de forma nativa (no renombrar)
+#   6. Actualizacion periodica de la base de datos (opcional recomendado):
+#
+#    El script de actualizacion incluido en la Parte 4 del pipeline:
+#        bash parte4_update_dbs.sh
+#
+#    Para actualizar SnpEff:
+#        conda activate ont_annot
+#        conda update -c bioconda snpeff
+#        snpEff download GRCh38.99    # solo si cambia la version de la DB
 # ----------------------------------------------------------------------------------------------------------------------------------
 channels:
   - conda-forge

@@ -1,2 +1,0 @@
-"SampleID"	"Haplogroup"	"Rank"	"Quality"	"Range"	"Not_Found_Polys"	"Found_Polys"	"Remaining_Polys"	"AAC_In_Remainings"	"Input_Sample"
-"SAMPLE"	"H1+16189"	"1"	"0.7816"	"1-16569"	"8860G"	"263G 750G 1438G 3010A 4769G 15326G 16189C"	"310C (localPrivateMutation) 8119C (localPrivateMutation) 16299G (localPrivateMutation) 16519C (hotspot)"	""	"263G 310C 750G 1438G 3010A 4769G 8119C 15326G 16189C 16299G 16519C"
