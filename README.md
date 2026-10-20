@@ -221,30 +221,30 @@ Los archivos concretos dependerán de los datos de entrada, de la configuración
 Las herramientas empleadas en el pipeline incluyen:
 
 **Control de calidad**
-- NanoPlot
-- Porechop
-- NanoFilt
-- Filtlong
+- NanoPlot (v.1.42.0)
+- Porechop (v.0.2.4)
+- NanoFilt (v.2.8.0)
+- Filtlong (v.0.2.1)
 
 **Alineamiento y procesamiento**
-- Minimap2
-- NGMLR
-- Samtools
-- GATK4
-- Qualimap
+- Minimap2 (v.2.28)
+- NGMLR (v.0.2.7)
+- Samtools (v.1.19)
+- GATK4 (v.4.4.0.0)
+- Qualimap (v.2.3)
 
 **Llamada de variantes**
-- Clair3
-- Mutserve2
-- BCFtools
-- Samtools
+- Clair3 (v.2.0.1)
+- Mutserve2 (v.2.0.1)
+- BCFtools (v.1.23)
+- Samtools (v.1.23)
 
 **Anotación**
-- SnpEff
-- BCFtools
-- HaploGrep3
+- SnpEff (v.5.2)
+- BCFtools (v.1.23)
+- HaploGrep3 (v3.2.2)
 - ClinVar
-- gnomAD mitochondrial
+- gnomAD mitochondrial (v.3.1)
 
 La selección y disponibilidad de las herramientas dependen de los entornos y de las versiones configuradas en el proyecto.
 
